@@ -1,0 +1,105 @@
+---
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Portfolio Edu Nievas" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+	</head>
+	<body id="body" class:list={["content-center justify-center items-center", "theme-dark"]}>
+		<slot />
+	</body>
+</html>
+<style is:global>
+
+	.theme-dark {
+		--background: #070F2B;
+		--primary: #1B1A55;
+		--secondary: #535C91;
+		--accent: #9290C3;
+
+		background: var(--background);
+	}
+
+	.theme-light {
+		--background: #C4DFDF;
+		--primary: #ffffff;
+		--secondary: #ff0000;
+		--accent: #ff00c3;
+
+		background: var(--background);
+	}
+
+	html {
+		font-family: system-ui, sans-serif;
+	}
+
+	.switch {
+		position: relative;
+		display: inline-block;
+		width: 2em;
+		height: 1.2em;
+	}
+
+	.switch input {
+		opacity: 0;
+		width: 0;
+		height: 0;
+	}
+
+	.slider {
+		position: absolute;
+		cursor: pointer;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-color: #ccc;
+		-webkit-transition: .4s;
+		transition: .4s;
+	}
+
+	.slider:before {
+		position: absolute;
+		content: "";
+		height: .8em;
+		width: .8em;
+		left: .15em;
+		bottom: .20em;
+		background-color: white;
+		-webkit-transition: .4s;
+		transition: .4s;
+	}
+
+	input:checked + .slider {
+		background-color: #2196F3;
+	}
+
+	input:focus + .slider {
+		box-shadow: 0 0 1px #2196F3;
+	}
+
+	input:checked + .slider:before {
+		-webkit-transform: translateX(.75em);
+		-ms-transform: translateX(.75em);
+		transform: translateX(.75em);
+	}
+
+	.slider.round {
+		border-radius: 2.1em;
+	}
+
+	.slider.round:before {
+		border-radius: 50%;
+	}
+</style>

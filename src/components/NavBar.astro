@@ -1,0 +1,49 @@
+---
+import Moon from "./Moon.astro"
+import { body } from "../layouts/Layout.astro";
+---
+<nav class="mx-auto rounded-[1.3em] p-2 w-[60em] mt-6 bg-[--primary] items-center">
+    <div class="flex justify-evenly content-evenly place-content-evenly">
+        <a href="/" class="text-white p-3 pl-8 pr-8 font-bold rounded-xl hover:bg-[--secondary] hover:border-blue-400 transition-all duration-300">
+            Experiencia
+        </a>
+        <a href="/" class="text-white p-3 pl-8 pr-8 font-bold rounded-xl hover:bg-[--secondary] hover:border-blue-400 transition-all duration-300">
+            Proyectos
+        </a>
+        <a href="/" class="text-white p-3 pl-8 pr-8 font-bold rounded-xl hover:bg-[--secondary] hover:border-blue-400 transition-all duration-300">
+            Sobre Mi
+        </a>
+        <a href="/" class="text-white p-3 pl-8 pr-8 font-bold rounded-xl hover:bg-[--secondary] hover:border-blue-400 transition-all duration-300">
+            Contacto
+        </a>
+
+        <div class="flex justify-center items-center">
+            <label class="switch ml-1 mr-1">
+                <input id="theme-switch" type="checkbox" checked="checked">
+                <span class="slider round"></span>
+            </label>
+            <Moon id="theme-icon" width="1.3em" class="color-white"/>
+        </div>
+    </div>
+</nav>
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const themeSwitch = document.getElementById("theme-switch") as HTMLInputElement;
+
+        const colorIcons = document.getElementById("theme-icon");
+
+        themeSwitch?.addEventListener("change", () => {
+            const body = document.body;
+            if (themeSwitch.checked) {
+                body.classList.remove("theme-light");
+                body.classList.add("theme-dark");
+                colorIcons?.classList.add("text-white");
+            } else {
+                body.classList.remove("theme-dark");
+                body.classList.add("theme-light");
+                colorIcons?.classList.add("text-black");
+            }
+        });
+    });
+</script>
