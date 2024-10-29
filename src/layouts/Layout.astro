@@ -26,6 +26,7 @@ const { title } = Astro.props;
 		--background: #070F2B;
 		--primary: #1B1A55;
 		--secondary: #535C91;
+		--secondary-low-opacity: rgba(83, 92, 145, 0.7);
 		--accent: #9290C3;
 
 		background: var(--background);
@@ -35,13 +36,18 @@ const { title } = Astro.props;
 		--background: #C4DFDF;
 		--primary: #ffffff;
 		--secondary: #ff0000;
-		--accent: #ff00c3;
+		--accent: #0004ff;
 
 		background: var(--background);
 	}
 
 	html {
 		font-family: system-ui, sans-serif;
+		scroll-behavior: smooth;
+	}
+
+	body {
+		overflow-x: hidden;
 	}
 
 	.switch {

@@ -1,22 +1,54 @@
 ---
+import '@/styles/globals.css'
 import Layout from '../layouts/Layout.astro';
 import NavBar from "../components/NavBar.astro";
+import TimeLine from "../components/TimeLine.astro";
+import BackgroundBlur from "../components/BackgroundBlur.astro";
+import SuitCase from "../components/SuitCase.astro";
+import Meteors from "../components/ui/meteors.jsx";
+import Footer from "../components/Footer.astro";
 ---
 
-<Layout title="Portfolio Edu Nievas">
+<Layout title="Portfolio Edu Nievas - Desarrollador Full Stack">
+	<BackgroundBlur/>
+	<Meteors client:load />
 	<NavBar/>
-	<article class="mx-auto flex-col justify-center items-center w-fit px-4 py-8 text-white">
+	<header class="mx-auto flex-col min-h-[35em] justify-center items-center w-fit px-4 py-8 text-white">
 		<div class="flex-row items-center justify-center center">
-			<h1 class="mt-56 text-8xl items-center justify-center content-center">I am 👨‍💻
+			<h1 class="mt-56 text-8xl items-center justify-center content-center">Soy 👨‍💻
 				<span class="block font-bold text-[--accent] stroke-2 stroke-[--secondary]">
 				Edu Nievas
 			</span>
 			</h1>
-			<h4 class="flex-col text-2xl">I am full stack
+			<h4 class="flex-col text-2xl">
 				<span class="font-bold text-[--accent] stroke-2 stroke-[--secondary]">
-					Developer
+					Desarrollador
 				</span>
+				Full Stack
 			</h4>
 		</div>
+	</header>
+	<article class="mx-auto max-w-[50em] flex-col justify-center items-center px-4 py-8">
+		<h2 id="experiencia" class=" mb-16 flex items-center text-3xl font-semibold gap-x-3 text-white">
+			<SuitCase/>
+			Experiencia Laboral
+		</h2>
+		<TimeLine/>
 	</article>
+	<article class="mx-auto max-w-[50em] flex-col justify-center items-center px-4 py-8">
+		<h2 id="proyectos" class="flex items-center mb-6 text-3xl font-semibold gap-x-3 text-white">  <svg class="size-7" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M7 8l-4 4l4 4"></path><path d="M17 8l4 4l-4 4"></path><path d="M14 4l-4 16"></path></svg>
+			Proyectos
+		</h2>
+	</article>
+	<article class="mx-auto max-w-[50em] flex-col justify-center items-center px-4 py-8">
+		<h2 id="sobre-mi" class="flex items-center mb-6 text-3xl font-semibold gap-x-3 text-white">  <svg class="size-8" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0"></path><path d="M6 21v-2a4 4 0 0 1 4 -4h4"></path><path d="M15 19l2 2l4 -4"></path></svg>
+			Sobre mí
+		</h2>
+	</article>
+
+	<Footer/>
 </Layout>
+
+<script>
+	gsap.registerPlugin(ScrollTrigger);
+</script>

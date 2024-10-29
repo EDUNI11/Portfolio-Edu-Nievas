@@ -1,28 +1,47 @@
 ---
-import Moon from "./Moon.astro"
-import { body } from "../layouts/Layout.astro";
+import MoonIcon from "./MoonIcon.astro"
+import SunIcon from "./SunIcon.astro";
 ---
-<nav class="mx-auto rounded-[1.3em] p-2 w-[60em] mt-6 bg-[--primary] items-center">
+<style>
+    .scrolled {
+        background: rgb(27, 26, 85);
+        backdrop-filter: blur(5px);
+        transition: all 0.5s ease-in-out;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        max-width: 38em;
+    }
+
+    .scrolled a {
+        padding: 0.5rem 1rem 0.5rem 1rem;
+        transition: all 0.5s ease-in-out;
+    }
+    .not-scrolled {
+        background: rgba(27, 26, 85, 100);
+        transition: all 0.5s ease-in-out;
+    }
+</style>
+<nav id="scroll-nav" class="not-scrolled max-w-[45em] sticky top-2 mx-auto h-auto rounded-[1.3em] p-2 w-fit items-center">
     <div class="flex justify-evenly content-evenly place-content-evenly">
-        <a href="/" class="text-white p-3 pl-8 pr-8 font-bold rounded-xl hover:bg-[--secondary] hover:border-blue-400 transition-all duration-300">
-            Experiencia
-        </a>
-        <a href="/" class="text-white p-3 pl-8 pr-8 font-bold rounded-xl hover:bg-[--secondary] hover:border-blue-400 transition-all duration-300">
+        <a href="#proyectos" class="text-xs text-white pt-4 pb-4 pl-8 pr-8 font-bold rounded-xl hover:bg-[--secondary-low-opacity] transition-all duration-300">
             Proyectos
         </a>
-        <a href="/" class="text-white p-3 pl-8 pr-8 font-bold rounded-xl hover:bg-[--secondary] hover:border-blue-400 transition-all duration-300">
+        <a href="#sobre-mi" class="text-xs text-white pt-4 pb-4 pl-8 pr-8 font-bold rounded-xl hover:bg-[--secondary-low-opacity] transition-all duration-300">
             Sobre Mi
         </a>
-        <a href="/" class="text-white p-3 pl-8 pr-8 font-bold rounded-xl hover:bg-[--secondary] hover:border-blue-400 transition-all duration-300">
+        <a href="#experiencia" class="text-xs text-white pt-4 pb-4 pl-8 pr-8 font-bold rounded-xl hover:bg-[--secondary-low-opacity] transition-all duration-300">
+            Experiencia
+        </a>
+        <a href="https://www.linkedin.com/in/edu-nievas-dris-6b6886335/" target="_blank" rel="noopener noreferrer" class="text-xs text-white pt-4 pb-4 pl-8 pr-8 font-bold rounded-xl hover:bg-[--secondary-low-opacity] transition-all duration-300">
             Contacto
         </a>
 
         <div class="flex justify-center items-center">
+            <SunIcon id="sun-theme-icon" width="1.3em"/>
             <label class="switch ml-1 mr-1">
                 <input id="theme-switch" type="checkbox" checked="checked">
                 <span class="slider round"></span>
             </label>
-            <Moon id="theme-icon" width="1.3em" class="color-white"/>
+            <MoonIcon id="moon-theme-icon" width="1.3em"/>
         </div>
     </div>
 </nav>
@@ -31,18 +50,33 @@ import { body } from "../layouts/Layout.astro";
     document.addEventListener("DOMContentLoaded", () => {
         const themeSwitch = document.getElementById("theme-switch") as HTMLInputElement;
 
-        const colorIcons = document.getElementById("theme-icon");
+        const moonColorIcon = document.getElementById("moon-theme-icon");
+        const lightColorIcon = document.getElementById("sun-theme-icon");
 
         themeSwitch?.addEventListener("change", () => {
             const body = document.body;
             if (themeSwitch.checked) {
                 body.classList.remove("theme-light");
                 body.classList.add("theme-dark");
-                colorIcons?.classList.add("text-white");
+                lightColorIcon.setAttribute("stroke", "white");
+                moonColorIcon.setAttribute("stroke", "white");
             } else {
                 body.classList.remove("theme-dark");
                 body.classList.add("theme-light");
-                colorIcons?.classList.add("text-black");
+                lightColorIcon.setAttribute("stroke", "black");
+                moonColorIcon.setAttribute("stroke", "black");
+            }
+        });
+
+        const scrollNav = document.getElementById("scroll-nav");
+
+        window.addEventListener("scroll", () => {
+            if (window.scrollY > 100) {
+                scrollNav.classList.remove("not-scrolled");
+                scrollNav.classList.add("scrolled");
+            } else {
+                scrollNav.classList.remove("scrolled");
+                scrollNav.classList.add("not-scrolled");
             }
         });
     });
