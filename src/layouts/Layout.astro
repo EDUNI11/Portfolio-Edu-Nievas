@@ -25,20 +25,29 @@ const { title } = Astro.props;
 	.theme-dark {
 		--background: #070F2B;
 		--primary: #1B1A55;
+		--primary-low-opacity: rgba(27, 26, 85, 0.4);
 		--secondary: #535C91;
 		--secondary-low-opacity: rgba(83, 92, 145, 0.7);
 		--accent: #9290C3;
-
-		background: var(--background);
+		--principal-text-color: #ffffff;
+		--secondary-text-color: rgba(255, 255, 255, 0.6);
+		--navbar-border: rgba(255, 255, 255, 0.3);
+		--date-color: rgba(165, 165, 165, 0.9);
+		transition: all 0.5s ease-in-out;
 	}
 
 	.theme-light {
 		--background: #C4DFDF;
 		--primary: #ffffff;
-		--secondary: #ff0000;
-		--accent: #0004ff;
-
-		background: var(--background);
+		--primary-low-opacity: rgba(255, 255, 255, 0.4);
+		--secondary: #DAEAFFFF;
+		--secondary-low-opacity: rgba(218, 234, 255, 0.7);
+		--accent: #303293;
+		--principal-text-color: #000000;
+		--secondary-text-color: rgba(0, 0, 0, 0.6);
+		--navbar-border: rgba(0, 0, 0, 0.3);
+		--date-color: rgba(97, 97, 97, 0.9);
+		transition: all 0.5s ease-in-out;
 	}
 
 	html {
@@ -47,6 +56,7 @@ const { title } = Astro.props;
 	}
 
 	body {
+		background: var(--background);
 		overflow-x: hidden;
 	}
 
