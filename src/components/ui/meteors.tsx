@@ -16,7 +16,7 @@ export const Meteors = ({ number = 15 }: MeteorsProps) => {
       left: Math.floor(Math.random() * maxMeteorPosition) + "px",
       animationDelay: Math.random() * 2 + 0.2 + "s",
       animationDuration: Math.floor(Math.random() * 15 + 5) + "s",
-      maxWidth: `${maxMeteorPosition}px`,
+      maxWidth: `${maxMeteorPosition}`,
     }));
     setMeteorStyles(styles);
   }, [number]);
