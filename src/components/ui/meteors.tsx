@@ -8,14 +8,15 @@ export const Meteors = ({ number = 15 }: MeteorsProps) => {
   const [meteorStyles, setMeteorStyles] = useState<Array<React.CSSProperties>>([]);
 
   useEffect(() => {
-    const maxMeteorPosition = 85;
+    const screenWidth = window.innerWidth;
+    const maxMeteorPosition = screenWidth - 120;
 
     const styles = [...new Array(number)].map(() => ({
       top: -5,
-      left: Math.floor(Math.random() * maxMeteorPosition) + "dvw",
+      left: Math.floor(Math.random() * maxMeteorPosition) + "px",
       animationDelay: Math.random() * 2 + 0.2 + "s",
       animationDuration: Math.floor(Math.random() * 15 + 5) + "s",
-      maxWidth: `${maxMeteorPosition}dvw`,
+      maxWidth: `${maxMeteorPosition}`,
     }));
     setMeteorStyles(styles);
   }, [number]);
