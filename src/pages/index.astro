@@ -1,16 +1,11 @@
 ---
 import '@/styles/globals.css'
 import Layout from '../layouts/Layout.astro';
-import NavBar from "../components/NavBar.astro";
 import TimeLine from "../components/TimeLine.astro";
-import BackgroundBlur from "../components/BackgroundBlur.astro";
-import Meteors from "../components/ui/meteors.jsx";
-import Footer from "../components/Footer.astro";
 import Titles from "../components/Titles.astro";
 import Articles from "../components/Articles.astro";
 import ProjectsCards from "../components/ProjectsCards.astro";
 import AboutMe from "../components/AboutMe.astro";
-import Header from "../components/Header.astro";
 import ProjectsIcon from "../components/ProjectsIcon.astro";
 import TechInfo from "../components/TechInfo.astro";
 import TechIcon from "../components/TechIcon.astro";
@@ -46,7 +41,6 @@ const information = [
         content: 'TimeLine' as ContentComponentKeys
     }
 ];
-
 const iconComponents: Record<IconComponentKeys, any> = {
     ProjectsIcon: ProjectsIcon,
     TechIcon: TechIcon,
