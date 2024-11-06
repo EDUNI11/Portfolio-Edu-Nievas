@@ -23,38 +23,39 @@ type ContentComponentKeys = 'ProjectsCards' | 'TechInfo' | 'AboutMe' | 'TimeLine
 const information = [
     {
         id: 'proyectos',
-        icon: 'ProjectsIcon',
+        icon: 'ProjectsIcon' as IconComponentKeys,
         title: 'Proyectos',
-        content: 'ProjectsCards'
+        content: 'ProjectsCards' as ContentComponentKeys
     },
     {
         id: 'tecnologias',
-        icon: 'TechIcon',
+        icon: 'TechIcon' as IconComponentKeys,
         title: 'Tecnologías',
-        content: 'TechInfo'
+        content: 'TechInfo' as ContentComponentKeys
     },
     {
         id: 'sobre-mi',
-        icon: 'AboutMeIcon',
+        icon: 'AboutMeIcon' as IconComponentKeys,
         title: 'Sobre mí',
-        content: 'AboutMe'
+        content: 'AboutMe' as ContentComponentKeys
     },
     {
         id: 'experiencia',
-        icon: 'ExperienceIcon',
+        icon: 'ExperienceIcon' as IconComponentKeys,
         title: 'Experiencia Laboral',
-        content: 'TimeLine'
+        content: 'TimeLine' as ContentComponentKeys
     }
-]
+];
 
-const iconComponents: Record<IconComponentKeys, (_props: Record<string, any>) => Element> = {
+
+const iconComponents: Record<IconComponentKeys, any> = {
     ProjectsIcon: ProjectsIcon,
     TechIcon: TechIcon,
     AboutMeIcon: AboutMeIcon,
     ExperienceIcon: ExperienceIcon
 };
 
-const contentComponents: Record<ContentComponentKeys, (_props: Record<string, any>) => Element> = {
+const contentComponents: Record<ContentComponentKeys, any> = {
     ProjectsCards: ProjectsCards,
     TechInfo: TechInfo,
     AboutMe: AboutMe,
