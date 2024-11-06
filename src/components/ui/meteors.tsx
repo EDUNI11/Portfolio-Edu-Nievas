@@ -3,19 +3,21 @@ import { cn } from "@/lib/utils";
 
 interface MeteorsProps {
   number?: number;
+  className?: string;
 }
-export const Meteors = ({ number = 15 }: MeteorsProps) => {
+export const Meteors = ({ number = 15, className }: MeteorsProps) => {
   const [meteorStyles, setMeteorStyles] = useState<Array<React.CSSProperties>>([]);
 
   useEffect(() => {
-    const maxMeteorPosition = 85;
+    const screenWidth = window.innerWidth;
+    const maxMeteorPosition = screenWidth - 120;
 
     const styles = [...new Array(number)].map(() => ({
       top: -5,
-      left: Math.floor(Math.random() * maxMeteorPosition) + "dvw",
+      left: Math.floor(Math.random() * maxMeteorPosition) + "px",
       animationDelay: Math.random() * 2 + 0.2 + "s",
       animationDuration: Math.floor(Math.random() * 15 + 5) + "s",
-      maxWidth: `${maxMeteorPosition}dvw`,
+      maxWidth: `${maxMeteorPosition}`,
     }));
     setMeteorStyles(styles);
   }, [number]);
@@ -26,6 +28,7 @@ export const Meteors = ({ number = 15 }: MeteorsProps) => {
             <span
                 key={idx}
                 className={cn(
+                    className,
                     "pointer-events-none absolute top-1/2 size-0.8 rotate-[215deg] animate-meteor rounded-full bg-slate-500 shadow-[0_0_0_1px_#ffffff20]"
                 )}
                 style={style}
