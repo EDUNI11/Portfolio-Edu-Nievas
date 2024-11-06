@@ -47,14 +47,14 @@ const information = [
     }
 ]
 
-const iconComponents: Record<IconComponentKeys, (_props: Record<string, any>) => Element> = {
+const iconComponents: Record<IconComponentKeys, any> = {
     ProjectsIcon: ProjectsIcon,
     TechIcon: TechIcon,
     AboutMeIcon: AboutMeIcon,
     ExperienceIcon: ExperienceIcon
 };
 
-const contentComponents: Record<ContentComponentKeys, (_props: Record<string, any>) => Element> = {
+const contentComponents: Record<ContentComponentKeys, any> = {
     ProjectsCards: ProjectsCards,
     TechInfo: TechInfo,
     AboutMe: AboutMe,
