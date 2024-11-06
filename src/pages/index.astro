@@ -63,10 +63,6 @@ const contentComponents: Record<ContentComponentKeys, (_props: Record<string, an
 ---
 
 <Layout title="Portfolio Edu Nievas - Desarrollador Full Stack">
-    <BackgroundBlur/>
-    <Meteors client:load/>
-    <NavBar/>
-    <Header/>
     {
         information.map(info => {
             const IconComponent = iconComponents[info.icon];
@@ -83,6 +79,4 @@ const contentComponents: Record<ContentComponentKeys, (_props: Record<string, an
             );
         })
     }
-
-    <Footer/>
 </Layout>
