@@ -1,0 +1,65 @@
+{
+  "title": "Edu Nievas - Desarrollador Full Stack",
+  "header": {
+    "iAm": "Soy",
+    "developer": "Desarrollador",
+    "developerSpan": "Full Stack"
+  },
+  "contact": "Contacto",
+  "projects": {
+    "projectsTitle": "Proyectos",
+    "online_shop": {
+      "title": "Tienda online (DAM)",
+      "description": "Tienda online desarrollada en Angular con Firebase, se utilizó TailwindCSS, Bootstrap, entre otros. Esto se realizó durante el primer curso de DAM."
+    },
+    "primer_portfolio": {
+      "title": "Primer portfolio (SMR)",
+      "description": "Primer portfolio que se desarrolló simplemente con HTML y CSS en 2022, durante el segundo curso de Sistemas Microinformáticos y Redes. Dentro de este portfolio se explicó y se mostró la creación de otros pequeños proyectos del curso."
+    }
+  },
+  "showProjects": "Ver proyecto",
+  "showRepositories": "Ver repositorio",
+  "technologies": {
+    "technologiesTitle": "Tecnologías",
+    "description": "He trabajado con varias ",
+    "span": "tecnologías, lenguajes y librerias ",
+    "descriptionEnd": "e intento seguir aprendiendo y mejorando cada vez más. También intento aprender nuevas tecnologías y mejorar mis conocimientos."
+  },
+  "aboutMe": {
+    "aboutMeTitle": "Sobre mí",
+    "firstPart": "¡Hola! Soy Edu Nievas, aunque la mayoría me conoce como Edu o eduni. Tengo 20 años y actualmente estoy cursando el Grado Superior en Desarrollo de Aplicaciones Multiplataforma (DAM). ",
+    "firstSpan": "Mi pasión es el desarrollo web ",
+    "firstPartEnd": "y estoy en camino para convertirme en un programador Full Stack.",
+    "secondPart": "Me especializo en el desarrollo de aplicaciones web y, actualmente, ",
+    "secondSpan": "estoy en búsqueda de una empresa donde pueda aplicar mis conocimientos y seguir creciendo profesionalmente. ",
+    "secondPartEnd": "En este portafolio, encontrarás ejemplos de mis proyectos y habilidades, que espero sirvan como una muestra de lo que puedo aportar a tu equipo.",
+    "thirdPart": "Estoy comprometido en mantenerme al día con las tecnologías del desarrollo web, como ",
+    "thirdSpan": "React, Astro y Angular, ampliando constantemente mis conocimientos ",
+    "thirdPartEnd": "para adaptarme a los desafíos del sector. Si estás buscando un desarrollador motivado y versátil, dispuesto a contribuir a proyectos web innovadores, no dudes en contactarme. ",
+    "spanEnd": "¡Estoy aquí para ayudarte!"
+  },
+  "experience": {
+    "navTitle": "Experiencia",
+    "title": "Experiencia Laboral",
+    "actual": "Actualidad...",
+    "mercadona": {
+      "date": "Mayo 2022",
+      "description": "Trabajando a jornada parcial mientras completo mis estudios (DAM).",
+      "functions": {
+        "cashier": "Cajero.",
+        "productReplenisher": "Reposición de productos."
+      }
+    },
+    "informaticaLlagostera": {
+      "date": "Diciembre de 2022 - Junio de 2023",
+      "functions": {
+        "wordpressDev": "Administración y creación de páginas web en Wordpress.",
+        "hardware": "Montaje, mantenimiento y reparación de equipos informáticos.",
+        "documentation": "Elaboración de documentación.",
+        "localNetwork": "Administración de red local.",
+        "customerService": "Atención en tienda."
+      }
+    }
+  },
+  "copyright": "Casi todos los derechos reservados."
+}
