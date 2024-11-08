@@ -16,8 +16,7 @@ import Footer from "../components/Footer.astro";
 import { loadTranslations } from '../lib/translations';
 import Layout from '../layouts/Layout.astro';
 
-const urlParams = new URLSearchParams(Astro.url.search);
-const lang = urlParams.get('lang') || 'es';
+const lang = 'es';
 
 const translations = loadTranslations(lang);
 
