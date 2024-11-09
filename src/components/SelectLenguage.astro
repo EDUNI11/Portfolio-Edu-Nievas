@@ -1,0 +1,27 @@
+---
+const { translations } = Astro.props;
+---
+
+<div class="flex items-center justify-center">
+    <a id="english" class="text-xs font-bold rounded-xl py-4 px-8 lg:hover:bg-[--secondary-low-opacity] transition-all duration-300 text-[--principal-text-color] no-underline" href="/en">
+        <img src="/img/england.webp" alt="English" class="w-5 h-auto inline-flex mr-1"/>
+        {translations.english}
+    </a>
+    <a id="spanish" class="text-xs font-bold hidden rounded-xl py-4 px-8 lg:hover:bg-[--secondary-low-opacity] transition-all duration-300 text-[--principal-text-color] no-underline" href="/">
+        <img src="/img/spain.webp" alt="Spanish" class="w-5 h-auto inline-flex mr-1"/>
+        {translations.spanish}
+    </a>
+</div>
+<script>
+    const url = window.location.pathname;
+    const lenguage = url.split('/')[1];
+
+    const spanish = document.getElementById('spanish');
+    const english = document.getElementById('english');
+
+
+    if (lenguage === 'en') {
+        spanish?.classList.toggle('hidden');
+        english?.classList.toggle('hidden');
+    }
+</script>

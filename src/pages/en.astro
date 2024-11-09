@@ -1,0 +1,84 @@
+---
+import '@/styles/globals.css'
+import TimeLine from "../components/TimeLine.astro";
+import Titles from "../components/Titles.astro";
+import Articles from "../components/Articles.astro";
+import ProjectsCards from "../components/ProjectsCards.astro";
+import AboutMe from "../components/AboutMe.astro";
+import ProjectsIcon from "../components/ProjectsIcon.astro";
+import TechInfo from "../components/TechInfo.astro";
+import TechIcon from "../components/TechIcon.astro";
+import AboutMeIcon from "../components/AboutMeIcon.astro";
+import ExperienceIcon from "../components/ExperienceIcon.astro";
+import NavBar from "../components/NavBar.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import { loadTranslations } from '../lib/translations';
+import Layout from '../layouts/Layout.astro';
+
+const lang = 'en';
+
+const translations = loadTranslations(lang);
+
+type IconComponentKeys = 'ProjectsIcon' | 'TechIcon' | 'AboutMeIcon' | 'ExperienceIcon';
+type ContentComponentKeys = 'ProjectsCards' | 'TechInfo' | 'AboutMe' | 'TimeLine';
+
+const information = [
+    {
+        id: 'proyectos',
+        icon: 'ProjectsIcon' as IconComponentKeys,
+        title: translations.projects['projectsTitle'],
+        content: 'ProjectsCards' as ContentComponentKeys
+    },
+    {
+        id: 'tecnologias',
+        icon: 'TechIcon' as IconComponentKeys,
+        title: translations.technologies['technologiesTitle'],
+        content: 'TechInfo' as ContentComponentKeys
+    },
+    {
+        id: 'sobre-mi',
+        icon: 'AboutMeIcon' as IconComponentKeys,
+        title: translations['aboutMe']['aboutMeTitle'],
+        content: 'AboutMe' as ContentComponentKeys
+    },
+    {
+        id: 'experiencia',
+        icon: 'ExperienceIcon' as IconComponentKeys,
+        title: translations.experience['title'],
+        content: 'TimeLine' as ContentComponentKeys
+    }
+];
+const iconComponents: Record<IconComponentKeys, any> = {
+    ProjectsIcon: ProjectsIcon,
+    TechIcon: TechIcon,
+    AboutMeIcon: AboutMeIcon,
+    ExperienceIcon: ExperienceIcon
+};
+
+const contentComponents: Record<ContentComponentKeys, any> = {
+    ProjectsCards: ProjectsCards,
+    TechInfo: TechInfo,
+    AboutMe: AboutMe,
+    TimeLine: TimeLine
+};
+---
+
+<Layout title={translations.title}>
+    <NavBar translations={translations}/>
+    <Header translations={translations}/>
+    {
+        information.map(info => {
+            const IconComponent = iconComponents[info.icon];
+            const ContentComponent = contentComponents[info.content];
+            return (
+                    <Articles id={info.id} key={info.id}>
+                        <Titles>
+                            <IconComponent/>
+                            {info.title} </Titles>
+                        <ContentComponent translations={translations}/>
+                    </Articles>);
+        })
+    }
+    <Footer translations={translations}/>
+</Layout>
