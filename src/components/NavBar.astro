@@ -33,7 +33,7 @@ const navElements = [
     },
 ]
 ---
-<nav id="scroll-nav" class="hidden lg:block animate-slide-in-top z-[100] not-scrolled max-w-[50%] sticky top-2 mx-auto w-full h-auto rounded-[1.3em] p-2 items-center">
+<nav id="scroll-nav" class="hidden lg:block animate-slide-in-top z-[100] not-scrolled sticky top-2 mx-auto w-fit h-auto rounded-[1.3em] p-2 items-center">
     <div class="flex justify-evenly content-evenly place-content-evenly">
         {
             navElements.map((element) => {
@@ -41,7 +41,7 @@ const navElements = [
                 const rel = element?.isContact ? "noopener noreferrer" : "";
                 const href = element?.isContact ? element.link : `#${element.link}`;
 
-                return <a href={href} target={target} rel={rel} class="text-xs text-[--principal-text-color] py-4 px-8 font-bold rounded-xl hover:bg-[--secondary-low-opacity] transition-all duration-300">
+                return <a href={href} target={target} rel={rel} class="text-xs text-[--principal-text-color] py-4 px-8 font-bold rounded-xl hover:bg-[--secondary-low-opacity]">
                     {element.title}
                 </a>
             })
