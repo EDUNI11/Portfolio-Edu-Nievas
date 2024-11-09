@@ -33,35 +33,6 @@ const navElements = [
     },
 ]
 ---
-<style>
-    .scrolled {
-        background: var(--primary-low-opacity);
-        backdrop-filter: blur(8px);
-        transition: all 0.5s ease-in-out;
-        border: 1px solid var(--navbar-border);
-        max-width: 30%;
-    }
-
-    .scrolled a {
-        padding: 1% 2% 1% 2%;
-        font-size: .6rem;
-        transition: all 0.5s ease-in-out;
-    }
-    .not-scrolled {
-        background: var(--primary);
-        transition: all 0.5s ease-in-out;
-    }
-
-    @media (max-width: 768px) {
-        .scrolled {
-            display: none;
-        }
-
-        .not-scrolled {
-            display: none;
-        }
-    }
-</style>
 <nav id="scroll-nav" class="hidden lg:block animate-slide-in-top z-[100] not-scrolled max-w-[50%] sticky top-2 mx-auto w-full h-auto rounded-[1.3em] p-2 items-center">
     <div class="flex justify-evenly content-evenly place-content-evenly">
         {
@@ -100,7 +71,8 @@ const navElements = [
         </button>
     </div>
 </nav>
-<div id="menu" class="hidden h-[100dvh] z-[101] top-0">
+
+<main id="menu" class="hidden h-[100dvh] z-[101] top-0">
     <div class="fixed w-full h-full bg-[--primary-low-opacity] backdrop-blur-[15px] z-[100]">
         <div class="ml-auto w-fit flex flex-col mt-8 mr-6 text-center">
             {
@@ -120,7 +92,7 @@ const navElements = [
             <SelectLenguage translations={translations}/>
         </div>
     </div>
-</div>
+</main>
 
 <script>
     document.addEventListener("DOMContentLoaded", () => {
@@ -153,6 +125,25 @@ const navElements = [
             closeMenuButton?.classList.toggle("hidden");
             menu?.classList.toggle("hidden");
             document.body.classList.toggle("overflow-hidden");
+        });
+
+        const scrollNav = document.getElementById("scroll-nav");
+
+        const moonColorIcon = document.getElementById("moon-theme-icon");
+        const sunColorIcon = document.getElementById("sun-theme-icon");
+
+        window.addEventListener("scroll", () => {
+            if (window.scrollY > 100) {
+                scrollNav?.classList.remove("not-scrolled");
+                scrollNav?.classList.add("scrolled");
+                sunColorIcon?.setAttribute("width", "1rem");
+                moonColorIcon?.setAttribute("width", "1rem");
+            } else {
+                scrollNav?.classList.remove("scrolled");
+                scrollNav?.classList.add("not-scrolled");
+                sunColorIcon?.setAttribute("width", "1.3rem");
+                moonColorIcon?.setAttribute("width", "1.3rem");
+            }
         });
     });
 </script>
