@@ -1,27 +1,33 @@
 ---
-import MoonIcon from "./MoonIcon.astro"
-import SunIcon from "./SunIcon.astro";
+import ChangeTheme from "./ChangeTheme.astro";
+
+const { translations } = Astro.props;
 
 const navElements = [
     {
+        id: 1,
         link: "proyectos",
-        title: "Proyectos",
+        title: translations.projects.projectsTitle,
     },
     {
+        id: 2,
         link: "tecnologias",
-        title: "Tecnologías",
+        title: translations.technologies.technologiesTitle,
     },
     {
+        id: 3,
         link: "sobre-mi",
-        title: "Sobre mí",
+        title: translations.aboutMe.aboutMeTitle,
     },
     {
+        id: 4,
         link: "experiencia",
-        title: "Experiencia",
+        title: translations.experience.navTitle,
     },
     {
-        link: "https://www.linkedin.com/in/edu-nievas-dris-6b6886335/",
-        title: "Contacto",
+        id: 5,
+        link: "https://www.linkedin.com/in/eduni",
+        title: translations.contact,
         isContact: true,
     },
 ]
@@ -55,7 +61,7 @@ const navElements = [
         }
     }
 </style>
-<nav id="scroll-nav" class="animate-slide-in-top z-[100] not-scrolled max-w-[50%] sticky top-2 mx-auto w-full h-auto rounded-[1.3em] p-2 items-center">
+<nav id="scroll-nav" class="hidden lg:block animate-slide-in-top z-[100] not-scrolled max-w-[50%] sticky top-2 mx-auto w-full h-auto rounded-[1.3em] p-2 items-center">
     <div class="flex justify-evenly content-evenly place-content-evenly">
         {
             navElements.map((element) => {
@@ -68,15 +74,7 @@ const navElements = [
                 </a>
             })
         }
-
-        <div class="flex justify-center items-center">
-            <SunIcon id="sun-theme-icon" width="1.3em"/>
-            <label class="switch ml-1 mr-1">
-                <input id="theme-switch" type="checkbox" checked="checked">
-                <span class="slider round"></span>
-            </label>
-            <MoonIcon id="moon-theme-icon" width="1.3em"/>
-        </div>
+        <ChangeTheme/>
     </div>
 </nav>
 
@@ -85,76 +83,73 @@ const navElements = [
         <img src="/img/me.webp" alt="Edu Nievas" class="w-10 md:my-4 md:mx-4 my-2 mx-2 md:w-12 h-auto rounded-full"/>
     </div>
     <div class="text-white mx-2 md:mx-4 my-2 md:my-4">
-        <button id="menu-button">
+        <button id="menu-button" class="block">
             <svg class="size-8 md:size-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M4 6l16 0"></path>
                 <path d="M4 12l16 0"></path>
                 <path d="M4 18l16 0"></path>
             </svg>
         </button>
+        <button id="close-menu-button" class="hidden">
+            <svg class="size-8 md:size-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 6l-12 12"></path>
+                <path d="M6 6l12 12"></path>
+            </svg>
+        </button>
     </div>
 </nav>
-<div id="menu" class="hidden h-[100dvh] z-[101]">
-    <div class="fixed top-0 left-0 w-full h-full bg-[--primary-low-opacity] backdrop-blur-[15px] z-[100] flex justify-center items-center">
-        <div class="w-full max-w-[50%] h-auto flex flex-col justify-center items-center">
-            <div class="flex justify-evenly content-evenly place-content-evenly">
-                {
-                    navElements.map((element) => {
-                        const target = element?.isContact ? "_blank" : "_self";
-                        const rel = element?.isContact ? "noopener noreferrer" : "";
-                        const href = element?.isContact ? element.link : `#${element.link}`;
-                        return <a href={href} target={target} rel={rel} class="text-xs text-[--principal-text-color] pt-4 pb-4 pl-8 pr-8 font-bold rounded-xl hover:bg-[--secondary-low-opacity] transition-all duration-300">
+<div id="menu" class="hidden h-[100dvh] z-[101] top-0">
+    <div class="fixed w-full h-full bg-[--primary-low-opacity] backdrop-blur-[15px] z-[100]">
+        <div class="ml-auto w-fit flex flex-col mt-8 mr-6 text-center">
+            {
+                navElements.map((element) => {
+                    const target = element?.isContact ? "_blank" : "_self";
+                    const rel = element?.isContact ? "noopener noreferrer" : "";
+                    const href = element?.isContact ? element.link : `#${element.link}`;
+
+                    return <div class="fit-content">
+                        <a id={`${element.id}`} href={href} target={target} rel={rel} class="text-xs group text-[--principal-text-color] px-8 font-bold transition-all duration-300">
                             {element.title}
                         </a>
-                    })
-                }
-            </div>
+                        <hr class="w-full border-t-[--navbar-border] group-hover:scale-105 mb-12 mt-2"/>
+                    </div>
+                })
+            }
         </div>
     </div>
 </div>
 
 <script>
     document.addEventListener("DOMContentLoaded", () => {
-        const themeSwitch = document.getElementById("theme-switch") as HTMLInputElement;
-
-        const moonColorIcon = document.getElementById("moon-theme-icon");
-        const sunColorIcon = document.getElementById("sun-theme-icon");
-
-        themeSwitch?.addEventListener("change", () => {
-            const body = document.body;
-            if (themeSwitch.checked) {
-                body.classList.remove("theme-light");
-                body.classList.add("theme-dark");
-                sunColorIcon?.setAttribute("stroke", "white");
-                moonColorIcon?.setAttribute("stroke", "white");
-            } else {
-                body.classList.remove("theme-dark");
-                body.classList.add("theme-light");
-                sunColorIcon?.setAttribute("stroke", "black");
-                moonColorIcon?.setAttribute("stroke", "black");
-            }
-        });
-
-        const scrollNav = document.getElementById("scroll-nav");
-
-        window.addEventListener("scroll", () => {
-            if (window.scrollY > 100) {
-                scrollNav?.classList.remove("not-scrolled");
-                scrollNav?.classList.add("scrolled");
-                sunColorIcon?.setAttribute("width", ".8rem");
-                moonColorIcon?.setAttribute("width", ".8rem");
-            } else {
-                scrollNav?.classList.remove("scrolled");
-                scrollNav?.classList.add("not-scrolled");
-                sunColorIcon?.setAttribute("width", "1.3rem");
-                moonColorIcon?.setAttribute("width", "1.3rem");
-            }
-        });
-
         const menuButton = document.getElementById("menu-button");
+        const closeMenuButton = document.getElementById("close-menu-button");
+
+        const menu = document.getElementById("menu");
+
+        const navElements = document.querySelectorAll("#menu a");
+
+        navElements.forEach((element) => {
+            element.addEventListener("click", () => {
+                menuButton?.classList.toggle("hidden");
+                menu?.classList.toggle("hidden");
+                closeMenuButton?.classList.toggle("hidden");
+                document.body.classList.toggle("overflow-hidden");
+            });
+        });
+
 
         menuButton?.addEventListener("click", () => {
-            const menu = document.getElementById("menu");
+            menuButton?.classList.toggle("hidden");
+            menu?.classList.toggle("hidden");
+            closeMenuButton?.classList.toggle("hidden");
+            document.body.classList.toggle("overflow-hidden");
+        });
+
+        closeMenuButton?.addEventListener("click", () => {
+            menuButton?.classList.toggle("hidden");
+            closeMenuButton?.classList.toggle("hidden");
+            menu?.classList.toggle("hidden");
+            document.body.classList.toggle("overflow-hidden");
         });
     });
 </script>

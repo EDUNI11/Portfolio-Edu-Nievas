@@ -1,5 +1,5 @@
 ---
-
+const { translations } = Astro.props;
 ---
 
 <article class="ml-6 mx-auto block lg:flex lg:max-w-[60em] w-full px-4 py-8">
@@ -8,30 +8,27 @@
     </div>
     <div class="lg:max-w-[70%] max-w-[90%]">
         <p class="text-[--principal-text-color] text-lg">
-            ¡Hola! Soy Edu Nievas, aunque la mayoría me conoce como Edu o eduni. Tengo 20 años y actualmente estoy
-            cursando el Grado Superior en Desarrollo de Aplicaciones Multiplataforma (DAM).
+            {translations.aboutMe.firstPart}
             <span class="text-[--accent] font-bold">
-                Mi pasión es el desarrollo web
+                {translations.aboutMe.firstSpan}
             </span>
-            y estoy en camino para convertirme en un programador Full Stack.
+            {translations.aboutMe.firstPartEnd}
         </p>
         <p class="mt-8 text-[--principal-text-color] text-lg">
-            Me especializo en el desarrollo de aplicaciones web y, actualmente,
+            {translations.aboutMe.secondPart}
             <span class="text-[--accent] font-bold">
-                estoy en búsqueda de una empresa donde pueda aplicar mis conocimientos y seguir creciendo profesionalmente.
+                {translations.aboutMe.secondSpan}
             </span>
-            En este portafolio, encontrarás ejemplos de mis proyectos y habilidades, que espero sirvan como una muestra de
-            lo que puedo aportar a tu equipo.
+            {translations.aboutMe.secondPartEnd}
         </p>
         <p class="mt-8 text-[--principal-text-color] text-lg">
-            Estoy comprometido en mantenerme al día con las tecnologías del desarrollo web, como
+            {translations.aboutMe.thirdPart}
             <span class="text-[--accent] font-bold">
-                React, Astro y Angular, ampliando constantemente mis conocimientos
+                {translations.aboutMe.thirdSpan}
             </span>
-            para adaptarme a los desafíos del sector. Si estás buscando un desarrollador motivado y versátil, dispuesto a
-            contribuir a proyectos web innovadores, no dudes en contactarme.
+            {translations.aboutMe.thirdPartEnd}
             <span class="text-[--accent] font-bold">
-                ¡Estoy aquí para ayudarte!
+                {translations.aboutMe.spanEnd}
             </span>
         </p>
     </div>

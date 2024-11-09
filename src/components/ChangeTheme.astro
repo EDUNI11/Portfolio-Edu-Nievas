@@ -1,0 +1,52 @@
+---
+import MoonIcon from "./MoonIcon.astro";
+import SunIcon from "./SunIcon.astro";
+---
+
+<div class="flex justify-center items-center">
+    <SunIcon id="sun-theme-icon" width="1.3em"/>
+    <label class="switch ml-1 mr-1">
+        <input id="theme-switch" type="checkbox" checked="checked">
+        <span class="slider round"></span>
+    </label>
+    <MoonIcon id="moon-theme-icon" width="1.3em"/>
+</div>
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const themeSwitch = document.getElementById("theme-switch") as HTMLInputElement;
+
+        const moonColorIcon = document.getElementById("moon-theme-icon");
+        const sunColorIcon = document.getElementById("sun-theme-icon");
+
+        themeSwitch?.addEventListener("change", () => {
+            const body = document.body;
+            if (themeSwitch.checked) {
+                body.classList.remove("theme-light");
+                body.classList.add("theme-dark");
+                sunColorIcon?.setAttribute("stroke", "white");
+                moonColorIcon?.setAttribute("stroke", "white");
+            } else {
+                body.classList.remove("theme-dark");
+                body.classList.add("theme-light");
+                sunColorIcon?.setAttribute("stroke", "black");
+                moonColorIcon?.setAttribute("stroke", "black");
+            }
+        });
+
+        const scrollNav = document.getElementById("scroll-nav");
+
+        window.addEventListener("scroll", () => {
+            if (window.scrollY > 100) {
+                scrollNav?.classList.remove("not-scrolled");
+                scrollNav?.classList.add("scrolled");
+                sunColorIcon?.setAttribute("width", ".8rem");
+                moonColorIcon?.setAttribute("width", ".8rem");
+            } else {
+                scrollNav?.classList.remove("scrolled");
+                scrollNav?.classList.add("not-scrolled");
+                sunColorIcon?.setAttribute("width", "1.3rem");
+                moonColorIcon?.setAttribute("width", "1.3rem");
+            }
+        });
+    });
+</script>
