@@ -1,8 +1,8 @@
 ---
 import LogosSlider from "./LogosSlider.astro";
+const { translations } = Astro.props;
 ---
 
-<p class="my-14 text-[--principal-text-color] ml-12 text-md max-w-[80%] text-lg lg:max-w-[65%]">He trabajado con varias <span
-        class="font-bold text-[--accent]">tecnologías, lenguajes y librerias</span> e intento seguir aprendiendo y
-    mejorando cada vez más. También intento aprender nuevas tecnologías y mejorar mis conocimientos.</p>
+<p class="my-14 text-[--principal-text-color] ml-12 text-md max-w-[80%] text-lg lg:max-w-[65%]">{translations.technologies.description} <span
+        class="font-bold text-[--accent]">{translations.technologies.span}</span>{translations.technologies.descriptionEnd}</p>
 <LogosSlider/>
