@@ -10,58 +10,58 @@
     "projectsTitle": "Projects",
     "online_shop": {
       "title": "Online shop (DAM)",
-      "description": "Tienda online desarrollada en Angular con Firebase, se utilizó TailwindCSS, Bootstrap, entre otros. Esto se realizó durante el primer curso de DAM."
+      "description": "Online store developed with Angular and Firebase, using TailwindCSS, Bootstrap, and other tools. This was created during the first year of the DAM program."
     },
     "primer_portfolio": {
       "title": "First portfolio (SMR)",
-      "description": "Primer portfolio que se desarrolló simplemente con HTML y CSS en 2022, durante el segundo curso de Sistemas Microinformáticos y Redes. Dentro de este portfolio se explicó y se mostró la creación de otros pequeños proyectos del curso."
+      "description": "The first portfolio was developed solely with HTML and CSS in 2022, during the second year of the Microcomputer Systems and Networks program. This portfolio showcased and explained the creation of other small projects completed during the course."
     }
   },
-  "showProjects": "Ver proyecto",
-  "showRepositories": "Ver repositorio",
+  "showProjects": "Show project",
+  "showRepositories": "Show repository",
   "technologies": {
     "technologiesTitle": "Technologies",
-    "description": "He trabajado con varias ",
-    "span": "tecnologías, lenguajes y librerias ",
-    "descriptionEnd": "e intento seguir aprendiendo y mejorando cada vez más. También intento aprender nuevas tecnologías y mejorar mis conocimientos."
+    "description": "I have worked with various ",
+    "span": "technologies, languages, and libraries",
+    "descriptionEnd": ", and I strive to keep learning and improving constantly. I also aim to learn new technologies and deepen my knowledge further."
   },
   "aboutMe": {
     "aboutMeTitle": "About Me",
-    "firstPart": "¡Hola! Soy Edu Nievas, aunque la mayoría me conoce como Edu o eduni. Tengo 20 años y actualmente estoy cursando el Grado Superior en Desarrollo de Aplicaciones Multiplataforma (DAM). ",
-    "firstSpan": "Mi pasión es el desarrollo web ",
-    "firstPartEnd": "y estoy en camino para convertirme en un programador Full Stack.",
-    "secondPart": "Me especializo en el desarrollo de aplicaciones web y, actualmente, ",
-    "secondSpan": "estoy en búsqueda de una empresa donde pueda aplicar mis conocimientos y seguir creciendo profesionalmente. ",
-    "secondPartEnd": "En este portafolio, encontrarás ejemplos de mis proyectos y habilidades, que espero sirvan como una muestra de lo que puedo aportar a tu equipo.",
-    "thirdPart": "Estoy comprometido en mantenerme al día con las tecnologías del desarrollo web, como ",
-    "thirdSpan": "React, Astro y Angular, ampliando constantemente mis conocimientos ",
-    "thirdPartEnd": "para adaptarme a los desafíos del sector. Si estás buscando un desarrollador motivado y versátil, dispuesto a contribuir a proyectos web innovadores, no dudes en contactarme. ",
-    "spanEnd": "¡Estoy aquí para ayudarte!"
+    "firstPart": "Hi! I'm Edu Nievas, though most people know me as Edu or eduni. I'm 20 years old, and I'm currently studying for a Higher Degree in Multiplatform Application Development (DAM). ",
+    "firstSpan": "My passion is web development ",
+    "firstPartEnd": "and I'm on my way to becoming a Full Stack developer.",
+    "secondPart": "I specialize in web application development, and currently, ",
+    "secondSpan": "I am currently looking for a company where I can apply my knowledge and continue to grow professionally. ",
+    "secondPartEnd": "In this portfolio, you will find examples of my projects and skills, which I hope will serve as a showcase of what I can contribute to your team.",
+    "thirdPart": "I am committed to staying up to date with web development technologies, such as ",
+    "thirdSpan": "React, Astro, and Angular, constantly expanding my knowledge ",
+    "thirdPartEnd": "to adapt to the challenges of the industry. If you're looking for a motivated and versatile developer, ready to contribute to innovative web projects, feel free to contact me. ",
+    "spanEnd": "I’m here to help!"
   },
   "experience": {
     "navTitle": "Experience",
     "title": "Laboral Experience",
-    "actual": "Actual...",
+    "actual": "Currently...",
     "mercadona": {
       "date": "May 2022",
-      "description": "Trabajando a jornada parcial mientras completo mis estudios (DAM).",
+      "description": "Working part-time while completing my studies (DAM).",
       "functions": {
-        "cashier": "Cajero.",
-        "productReplenisher": "Reposición de productos."
+        "cashier": "Cashier.",
+        "productReplenisher": "Stock replenishment."
       }
     },
     "informaticaLlagostera": {
       "date": "December 2022 - June 2023",
       "functions": {
-        "wordpressDev": "Administración y creación de páginas web en Wordpress.",
-        "hardware": "Montaje, mantenimiento y reparación de equipos informáticos.",
-        "documentation": "Elaboración de documentación.",
-        "localNetwork": "Administración de red local.",
-        "customerService": "Atención en tienda."
+        "wordpressDev": "Website management and creation using WordPress.",
+        "hardware": "Assembly, maintenance, and repair of computer equipment.",
+        "documentation": "Creation of documentation.",
+        "localNetwork": "Local network management.",
+        "customerService": "In-store customer service."
       }
     }
   },
-  "copyright": "Almost all rights reserved.",
+  "copyright": "Some rights reserved.",
   "english": "English",
   "spanish": "Spanish"
 }
