@@ -1,6 +1,7 @@
 ---
 import Meteors from "../components/ui/meteors";
 import BackgroundBlur from "../components/BackgroundBlur.astro";
+import Analytics from '@vercel/analytics/astro'
 
 interface Props {
 	title: string;
@@ -23,6 +24,7 @@ const { title } = Astro.props;
 		<BackgroundBlur/>
 		<Meteors className="hidden lg:block" client:load/>
 		<slot />
+		<Analytics />
 	</body>
 </html>
 <style is:global>
