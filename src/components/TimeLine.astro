@@ -1,47 +1,71 @@
 ---
 const { translations } = Astro.props;
 ---
-
-
-<ol class="relative mt-14 ml-14 border-s border-gray-200 dark:border-gray-700">
-    <li class="mb-10 ms-6">
+<div class="flex justify-center">
+    <ol class="relative mt-14 ml-14 border-s border-gray-200 dark:border-gray-700">
+        <li class="mb-10 ms-6">
         <span class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -start-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
             <svg class="w-2.5 h-2.5 text-blue-800 dark:text-blue-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
                 <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z"/>
             </svg>
         </span>
-        <h3 class="flex items-center mb-1 text-lg font-semibold ml-2 text-[--accent]">Mercadona S.A. <span class="bg-blue-100 text-blue-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300 ms-3">{translations.experience.actual}</span></h3>
-        <time datetime="2022-05-01" class="block mb-2 text-sm font-normal leading-none text-[--date-color]">{translations.experience.mercadona.date}</time>
-        <div class="mb-4 text-base font-normal text-[--principal-text-color]">
-            <p class="mb-5 mt-2 max-w-96" >{translations.experience.mercadona.description}</p>
-            <ul class="list-disc ml-4">
-                <li>{translations.experience.mercadona.functions.cashier}</li>
-                <li>{translations.experience.mercadona.functions.productReplenisher}</li>
-            </ul>
-        </div>
-        <!--<a href="#" class="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-100 focus:text-blue-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-[--principal-text-color] dark:hover:bg-gray-700 dark:focus:ring-gray-700"><svg class="w-3.5 h-3.5 me-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-            <path d="M14.707 7.793a1 1 0 0 0-1.414 0L11 10.086V1.5a1 1 0 0 0-2 0v8.586L6.707 7.793a1 1 0 1 0-1.414 1.414l4 4a1 1 0 0 0 1.416 0l4-4a1 1 0 0 0-.002-1.414Z"/>
-            <path d="M18 12h-2.55l-2.975 2.975a3.5 3.5 0 0 1-4.95 0L4.55 12H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-4a2 2 0 0 0-2-2Zm-3 5a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"/>
-        </svg> Download ZIP</a>-->
-    </li>
-    <li class="mb-10 ms-6">
+            <h3 class="flex items-center mb-1 text-lg font-semibold ml-2 text-[--accent]">Mercadona S.A. <span class="bg-blue-100 text-blue-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300 ms-3">{translations.experience.actual}</span></h3>
+            <time datetime="2022-05-01" class="block mb-2 text-sm font-normal leading-none text-[--date-color]">{translations.experience.mercadona.date}</time>
+            <div class="mb-4 text-base font-normal text-[--principal-text-color]">
+                <p class="mb-5 mt-2 max-w-96" >{translations.experience.mercadona.description}</p>
+                <ul class="list-disc ml-4">
+                    <li>{translations.experience.mercadona.functions.cashier}</li>
+                    <li>{translations.experience.mercadona.functions.productReplenisher}</li>
+                </ul>
+            </div>
+            <!--<a href="#" class="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-100 focus:text-blue-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-[--principal-text-color] dark:hover:bg-gray-700 dark:focus:ring-gray-700"><svg class="w-3.5 h-3.5 me-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M14.707 7.793a1 1 0 0 0-1.414 0L11 10.086V1.5a1 1 0 0 0-2 0v8.586L6.707 7.793a1 1 0 1 0-1.414 1.414l4 4a1 1 0 0 0 1.416 0l4-4a1 1 0 0 0-.002-1.414Z"/>
+                <path d="M18 12h-2.55l-2.975 2.975a3.5 3.5 0 0 1-4.95 0L4.55 12H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-4a2 2 0 0 0-2-2Zm-3 5a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"/>
+            </svg> Download ZIP</a>-->
+        </li>
+        <li class="mb-10 ms-6">
         <span class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -start-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
             <svg class="w-2.5 h-2.5 text-blue-800 dark:text-blue-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
                 <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z"/>
             </svg>
         </span>
-        <h3 class="mb-1 text-lg font-semibold text-[--accent] ml-2">Informática Llagostera / GMW</h3>
-        <time class="block mb-2 text-sm font-normal leading-none text-[--date-color]">{translations.experience.informaticaLlagostera.date}</time>
-        <div class="text-base font-normal text-[--principal-text-color]">
-            <ul class="list-disc ml-4">
-                <li>{translations.experience.informaticaLlagostera.functions.wordpressDev}</li>
-                <li>{translations.experience.informaticaLlagostera.functions.hardware}</li>
-                <li>{translations.experience.informaticaLlagostera.functions.documentation}</li>
-                <li>{translations.experience.informaticaLlagostera.functions.localNetwork}</li>
-                <li>{translations.experience.informaticaLlagostera.functions.customerService}</li>
-            </ul>
-        </div>
-    </li>
-</ol>
+            <h3 class="mb-1 text-lg font-semibold text-[--accent] ml-2">Informática Llagostera / GMW</h3>
+            <time class="block mb-2 text-sm font-normal leading-none text-[--date-color]">{translations.experience.informaticaLlagostera.date}</time>
+            <div class="text-base font-normal text-[--principal-text-color]">
+                <ul class="list-disc ml-4">
+                    <li>{translations.experience.informaticaLlagostera.functions.wordpressDev}</li>
+                    <li>{translations.experience.informaticaLlagostera.functions.hardware}</li>
+                    <li>{translations.experience.informaticaLlagostera.functions.documentation}</li>
+                    <li>{translations.experience.informaticaLlagostera.functions.localNetwork}</li>
+                    <li>{translations.experience.informaticaLlagostera.functions.customerService}</li>
+                </ul>
+            </div>
+        </li>
+    </ol>
+
+
+    <ol class="relative mt-14 ml-14 border-s border-gray-200 dark:border-gray-700">
+        <li class="mb-10 ms-6">
+        <span class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -start-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
+            <svg class="w-2.5 h-2.5 text-blue-800 dark:text-blue-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z"/>
+            </svg>
+        </span>
+            <h3 class="flex items-center mb-1 text-lg font-semibold ml-2 text-[--accent]">GeniusX <span class="bg-blue-100 text-blue-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300 ms-3">{translations.experience.actual}</span></h3>
+            <time datetime="2022-05-01" class="block mb-2 text-sm font-normal leading-none text-[--date-color]">{translations.experience.geniusx.date}</time>
+            <div class="mb-4 text-base font-normal text-[--principal-text-color]">
+                <p class="mb-5 mt-2 max-w-96" >{translations.experience.geniusx.description}</p>
+                <ul class="list-disc ml-4">
+                    <li>{translations.experience.geniusx.functions.webDeveloper}</li>
+                    <li>{translations.experience.geniusx.functions.programmer}</li>
+                </ul>
+            </div>
+            <!--<a href="https://geniusx.eu" class="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-100 focus:text-blue-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-[--principal-text-color] dark:hover:bg-gray-700 dark:focus:ring-gray-700"><svg class="w-3.5 h-3.5 me-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M14.707 7.793a1 1 0 0 0-1.414 0L11 10.086V1.5a1 1 0 0 0-2 0v8.586L6.707 7.793a1 1 0 1 0-1.414 1.414l4 4a1 1 0 0 0 1.416 0l4-4a1 1 0 0 0-.002-1.414Z"/>
+                <path d="M18 12h-2.55l-2.975 2.975a3.5 3.5 0 0 1-4.95 0L4.55 12H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-4a2 2 0 0 0-2-2Zm-3 5a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"/>
+            </svg> Show Page</a>-->
+        </li>
+    </ol>
+</div>
 
 

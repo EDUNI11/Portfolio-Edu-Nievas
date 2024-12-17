@@ -50,6 +50,14 @@
         "productReplenisher": "Stock replenishment."
       }
     },
+    "geniusx": {
+      "date": "October 2024",
+      "description": "Carrying out DAM practices.",
+      "functions": {
+        "webDeveloper": "Web Developer.",
+        "programmer": "Programmer."
+      }
+    },
     "informaticaLlagostera": {
       "date": "December 2022 - June 2023",
       "functions": {
