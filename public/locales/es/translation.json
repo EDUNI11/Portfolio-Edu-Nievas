@@ -54,8 +54,9 @@
       "date": "Octubre 2024",
       "description": "Realizando las prácticas de DAM.",
       "functions": {
+        "wordpressDev": "Administración y creación de páginas web en Wordpress con Divi como maquetador visual.",
         "webDeveloper": "Desarrollador Web.",
-        "programmer": "Programador."
+        "programmer": "Programador PHP."
       }
     },
     "informaticaLlagostera": {
