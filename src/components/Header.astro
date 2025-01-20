@@ -5,13 +5,13 @@ const { translations } = Astro.props;
 ---
 
 <header class="mx-auto flex-col min-h-[100vh] justify-center items-center w-fit py-8 text-[--principal-text-color]">
-    <div class="flex-row animate-fade-in items-center justify-center">
-        <h1 class="mt-56 text-8xl items-center justify-center content-center">{translations.header.iAm} 👨‍💻
+    <div class="flex-row w-fit mx-auto animate-fade-in items-center justify-center">
+        <h1 class="pl-10 md:pl-0 mt-56 text-8xl items-center justify-center content-center">{translations.header.iAm} 👨‍💻
             <span class="block font-bold text-[--accent] stroke-2 stroke-[--secondary]">
                 Edu Nievas
             </span>
         </h1>
-        <h4 class="ml-1 flex-col text-2xl">
+        <h4 class="pl-10 md:pl-0 ml-1 flex-col text-2xl">
 				<span class="font-bold text-[--accent] stroke-2 stroke-[--secondary]">
 					{translations.header.developer}
 				</span>
