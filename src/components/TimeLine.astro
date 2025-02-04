@@ -1,7 +1,7 @@
 ---
 const { translations } = Astro.props;
 ---
-<div class="flex flex-col-reverse md:flex-row justify-center">
+<div class="flex flex-col-reverse justify-center">
     <ol class="relative mt-14 ml-14 border-s border-gray-200 dark:border-gray-700">
         <li class="mb-10 ms-6">
         <span class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -start-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
@@ -12,10 +12,12 @@ const { translations } = Astro.props;
             <h3 class="flex items-center mb-1 text-lg font-semibold ml-2 text-[--accent]">Mercadona S.A. <span class="bg-blue-100 text-blue-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300 ms-3">{translations.experience.actual}</span></h3>
             <time datetime="2022-05-01" class="block mb-2 text-sm font-normal leading-none text-[--date-color]">{translations.experience.mercadona.date}</time>
             <div class="mb-4 text-base font-normal text-[--principal-text-color]">
-                <p class="mb-5 mt-2 max-w-96" >{translations.experience.mercadona.description}</p>
+                <p class="mb-5 mt-2 max-w-full" >{translations.experience.mercadona.description}</p>
                 <ul class="list-disc ml-4">
-                    <li>{translations.experience.mercadona.functions.cashier}</li>
-                    <li>{translations.experience.mercadona.functions.productReplenisher}</li>
+                    <li class="mb-2">{translations.experience.mercadona.functions.adaptQuickly}</li>
+                    <li class="mb-2">{translations.experience.mercadona.functions.teamWork}</li>
+                    <li class="mb-2">{translations.experience.mercadona.functions.solveProblems}</li>
+                    <li class="mb-2">{translations.experience.mercadona.functions.organizeTasks}</li>
                 </ul>
             </div>
             <!--<a href="#" class="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-100 focus:text-blue-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-[--principal-text-color] dark:hover:bg-gray-700 dark:focus:ring-gray-700"><svg class="w-3.5 h-3.5 me-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
@@ -32,12 +34,12 @@ const { translations } = Astro.props;
             <h3 class="mb-1 text-lg font-semibold text-[--accent] ml-2">Informática Llagostera / GMW</h3>
             <time class="block mb-2 text-sm font-normal leading-none text-[--date-color]">{translations.experience.informaticaLlagostera.date}</time>
             <div class="text-base font-normal text-[--principal-text-color]">
+                <p class="mb-5 mt-2 max-w-full" >{translations.experience.informaticaLlagostera.description}</p>
                 <ul class="list-disc ml-4">
-                    <li>{translations.experience.informaticaLlagostera.functions.wordpressDev}</li>
-                    <li>{translations.experience.informaticaLlagostera.functions.hardware}</li>
-                    <li>{translations.experience.informaticaLlagostera.functions.documentation}</li>
-                    <li>{translations.experience.informaticaLlagostera.functions.localNetwork}</li>
-                    <li>{translations.experience.informaticaLlagostera.functions.customerService}</li>
+                    <li class="mb-2">{translations.experience.informaticaLlagostera.functions.newTools}</li>
+                    <li class="mb-2">{translations.experience.informaticaLlagostera.functions.createDocs}</li>
+                    <li class="mb-2">{translations.experience.informaticaLlagostera.functions.solveProblems}</li>
+                    <li class="mb-2">{translations.experience.informaticaLlagostera.functions.teamWork}</li>
                 </ul>
             </div>
         </li>
@@ -54,11 +56,13 @@ const { translations } = Astro.props;
             <h3 class="flex items-center mb-1 text-lg font-semibold ml-2 text-[--accent]">GeniusX <span class="bg-blue-100 text-blue-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300 ms-3">{translations.experience.actual}</span></h3>
             <time datetime="2022-05-01" class="block mb-2 text-sm font-normal leading-none text-[--date-color]">{translations.experience.geniusx.date}</time>
             <div class="mb-4 text-base font-normal text-[--principal-text-color]">
-                <p class="mb-5 mt-2 max-w-96" >{translations.experience.geniusx.description}</p>
+                <p class="mb-5 mt-2 max-w-full" >{translations.experience.geniusx.description}</p>
                 <ul class="list-disc ml-4">
-                    <li>{translations.experience.geniusx.functions.webDeveloper}</li>
-                    <li>{translations.experience.geniusx.functions.programmer}</li>
-                    <li>{translations.experience.geniusx.functions.wordpressDev}</li>
+                    <li class="mb-2">{translations.experience.geniusx.functions.improveSEO}</li>
+                    <li class="mb-2">{translations.experience.geniusx.functions.customFunctionalities}</li>
+                    <li class="mb-2">{translations.experience.geniusx.functions.problemSolving}</li>
+                    <li class="mb-2">{translations.experience.geniusx.functions.teamWork}</li>
+                    <li class="mb-2">{translations.experience.geniusx.functions.adaptability}</li>
                 </ul>
             </div>
             <!--<a href="https://geniusx.eu" class="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-100 focus:text-blue-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-[--principal-text-color] dark:hover:bg-gray-700 dark:focus:ring-gray-700"><svg class="w-3.5 h-3.5 me-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">

@@ -45,29 +45,33 @@
     "actual": "Actualidad...",
     "mercadona": {
       "date": "Mayo 2022",
-      "description": "Trabajando a jornada parcial mientras completo mis estudios (DAM).",
+      "description": "Trabajando a tiempo parcial mientras estudio DAM, me he enfrentado a un entorno dinámico que requiere una gestión eficaz del tiempo y la priorización de tareas. A través de mis responsabilidades en atención al cliente y reposición de productos, he demostrado cómo puedo:",
       "functions": {
-        "cashier": "Cajero.",
-        "productReplenisher": "Reposición de productos."
+        "adaptQuickly": "Adaptarme rápidamente a cambios, administrando múltiples tareas sin comprometer la calidad del servicio.",
+        "teamWork": "Colaborar estrechamente con el equipo para garantizar una experiencia óptima para el cliente, lo que permitide mantener un flujo constante y eficiente en la tienda.",
+        "solveProblems": "Resolver problemas de manera eficiente, gestionando inconvenientes como la falta de stock o de personal en la línea de cajas de manera rápida.",
+        "organizeTasks": "Priorizar tareas bajo presión."
       }
     },
     "geniusx": {
       "date": "Octubre 2024",
-      "description": "Realizando las prácticas de DAM.",
+      "description": "Realizando las prácticas de DAM, estoy trabajado directamente en el desarrollo y la mejora de la experiencia digital de los clientes, enfrentándome a desafíos técnicos y creativos que han potenciado mis habilidades para identificar soluciones y optimizar procesos:",
       "functions": {
-        "wordpressDev": "Administración y creación de páginas web en Wordpress con Divi como maquetador visual.",
-        "webDeveloper": "Desarrollador Web.",
-        "programmer": "Programador PHP."
+        "improveSEO": "Desarrollo web y mejora continua: He tomado la iniciativa de optimizar el SEO de las páginas que gestiono, asegurando que los sitios tengan un rendimiento destacado en los motores de búsqueda y sean accesibles para más usuarios.",
+        "customFunctionalities": "Implementación de funcionalidades personalizadas en sitios web con Wordpress, adaptándome a las necesidades específicas de cada cliente y utilizando herramientas como HTML5, CSS y JS para dar vida a sus ideas.",
+        "problemSolving": "Resolución de problemas técnicos con rapidez, ofreciendo soluciones efectivas para mantener la estabilidad y la funcionalidad de las webs.",
+        "teamWork": "Trabajo en equipo en colaboración con diseñadores y desarrolladores, asegurando que cada parte del proyecto se realice de manera alineada y eficiente, lo que contribuye a la calidad final del producto.",
+        "adaptability": "Adaptabilidad a diferentes proyectos y estilos, como se ve en la implementación de un diseño innovador para un taller de vehículos, donde tomé una idea base y la transformé en una web funcional con un diseño oscuro y profesional."
       }
     },
     "informaticaLlagostera": {
       "date": "Diciembre de 2022 - Junio de 2023",
+      "description": "En este puesto, mi rol abarcó tanto aspectos técnicos como la interacción directa con los clientes, lo que me permitió perfeccionar mis habilidades de resolución de problemas y comunicación:",
       "functions": {
-        "wordpressDev": "Administración y creación de páginas web en Wordpress.",
-        "hardware": "Montaje, mantenimiento y reparación de equipos informáticos.",
-        "documentation": "Elaboración de documentación.",
-        "localNetwork": "Administración de red local.",
-        "customerService": "Atención en tienda."
+        "newTools": "Iniciativa al aprender y aplicar nuevas herramientas de Wordpress por mi cuenta, logrando implementar soluciones que mejoraron la funcionalidad de las webs sin necesidad de supervisión constante.",
+        "createDocs": "Creación de documentación técnica clara para los usuarios finales y para el equipo, asegurando que los procedimientos fueran fáciles de seguir y accesibles para todos.",
+        "solveProblems": "Resolución de problemas técnicos, como la reparación de equipos y la administración de redes locales, mejorando la infraestructura y reduciendo tiempos de inactividad.",
+        "teamWork": "Colaboración eficaz con el equipo de trabajo, lo que resultó en una mejora continua de los servicios y la satisfacción de los clientes."
       }
     }
   },

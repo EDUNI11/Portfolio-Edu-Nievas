@@ -47,27 +47,31 @@
       "date": "May 2022",
       "description": "Working part-time while completing my studies (DAM).",
       "functions": {
-        "cashier": "Cashier.",
-        "productReplenisher": "Stock replenishment."
+        "adaptQuickly": "Adapt quickly to changes in demand, handling multiple tasks without compromising service quality.",
+        "teamWork": "Collaborate closely with the team to ensure an optimal customer experience, which has allowed me to maintain a smooth and efficient workflow in the store.",
+        "solveProblems": "Solve problems efficiently, managing issues such as stock shortages or cash register adjustments quickly and without disrupting daily operations.",
+        "organizeTasks": "Organize and prioritize tasks under pressure, ensuring inventory is well-kept and the process runs smoothly without delays."
       }
     },
     "geniusx": {
       "date": "October 2024",
-      "description": "Carrying out DAM practices.",
+      "description": "During my DAM internship, I've worked directly on developing and enhancing the digital experience for clients, facing technical and creative challenges that have strengthened my ability to identify solutions and optimize processes:",
       "functions": {
-        "wordpressDev": "Website management and creation using WordPress and Divi as visual designer.",
-        "webDeveloper": "Web Developer.",
-        "programmer": "PHP Programmer."
+        "improveSEO": "Web development and continuous improvement: Took the initiative to optimize SEO for the websites I manage, ensuring that the sites perform well on search engines and are accessible to more users.",
+        "customFunctionalities": "Implemented custom functionalities on Wordpress sites, adapting to each client's specific needs and using tools like HTML5, CSS, and JS to bring their ideas to life.",
+        "problemSolving": "Problem-solving skills in a quick and efficient manner, providing effective solutions to maintain the stability and functionality of the websites.",
+        "teamWork": "Teamwork in collaboration with designers and developers, ensuring that each part of the project aligns and is executed efficiently, contributing to the final product's quality.",
+        "adaptability": "Adaptability to different projects and styles, as seen in the implementation of an innovative design for a vehicle workshop, where I took an initial concept and transformed it into a functional website with a sleek dark design."
       }
     },
     "informaticaLlagostera": {
       "date": "December 2022 - June 2023",
+      "description": "In this role, I covered both technical aspects and direct client interaction, which allowed me to enhance my problem-solving and communication skills:",
       "functions": {
-        "wordpressDev": "Website management and creation using WordPress.",
-        "hardware": "Assembly, maintenance, and repair of computer equipment.",
-        "documentation": "Creation of documentation.",
-        "localNetwork": "Local network management.",
-        "customerService": "In-store customer service."
+        "newTools": "Initiative in learning and applying new Wordpress tools independently, successfully implementing solutions that improved website functionality without constant supervision.",
+        "createDocs": "Created clear technical documentation for end users and the internal team, ensuring procedures were easy to follow and accessible to everyone.",
+        "solveProblems": "Problem-solving skills in fixing technical issues, such as repairing equipment and managing local networks, improving the infrastructure and reducing downtime.",
+        "teamWork": "Collaborated effectively with the team, leading to continuous improvements in services and client satisfaction."
       }
     }
   },
