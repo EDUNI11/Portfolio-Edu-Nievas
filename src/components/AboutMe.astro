@@ -1,7 +1,7 @@
 ---
 const { translations } = Astro.props;
 
-function calcularEdad(fechaNacimiento) {
+function calcularEdad(fechaNacimiento: Date): number {
     const fechaActual = new Date();
 
     let edad = fechaActual.getFullYear() - fechaNacimiento.getFullYear();
