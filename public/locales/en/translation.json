@@ -27,7 +27,8 @@
   },
   "aboutMe": {
     "aboutMeTitle": "About Me",
-    "firstPart": "Hi! I'm Edu Nievas, even though most people know me as Edu or eduni. I'm 20 years old, and I'm currently studying for a Higher Degree in Multiplatform Application Development (DAM). ",
+    "firstPart": "Hi! I'm Edu Nievas, even though most people know me as Edu or eduni. I'm",
+    "postAge": "years old, and I'm currently studying for a Higher Degree in Multiplatform Application Development (DAM). ",
     "firstSpan": "My passion is web development ",
     "firstPartEnd": "and I'm on my way to becoming a Full Stack developer.",
     "secondPart": "I specialize in web application development, and currently ",

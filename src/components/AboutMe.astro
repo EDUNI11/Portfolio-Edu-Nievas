@@ -1,11 +1,27 @@
 ---
 const { translations } = Astro.props;
+
+function calcularEdad(fechaNacimiento) {
+    const fechaActual = new Date();
+
+    let edad = fechaActual.getFullYear() - fechaNacimiento.getFullYear();
+    const mes = fechaActual.getMonth();
+    const dia = fechaActual.getDate();
+
+    if (mes < fechaNacimiento.getMonth() || (mes === fechaNacimiento.getMonth() && dia < fechaNacimiento.getDate())) {
+        edad--;
+    }
+    return edad;
+}
+
+const fechaNacimiento = new Date(2004, 0, 19);
+const edad = calcularEdad(fechaNacimiento);
 ---
 
 <article class="mx-auto flex-col-reverse gap-x-4 lg:flex-row flex lg:max-w-[60em] w-full px-4 py-8">
     <div class="ml-6 lg:max-w-[70%] max-w-[90%]">
         <p class="text-[--principal-text-color] text-lg">
-            {translations.aboutMe.firstPart}
+            {translations.aboutMe.firstPart} {edad} {translations.aboutMe.postAge}
             <span class="text-[--accent] font-bold">
                 {translations.aboutMe.firstSpan}
             </span>

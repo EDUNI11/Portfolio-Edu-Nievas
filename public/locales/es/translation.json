@@ -27,7 +27,8 @@
   },
   "aboutMe": {
     "aboutMeTitle": "Sobre mí",
-    "firstPart": "¡Hola! Soy Edu Nievas, aunque la mayoría me conoce como Edu o eduni. Tengo 20 años y actualmente estoy cursando el Grado Superior en Desarrollo de Aplicaciones Multiplataforma (DAM). ",
+    "firstPart": "¡Hola! Soy Edu Nievas, aunque la mayoría me conoce como Edu o eduni. Tengo",
+    "postAge": "años y actualmente estoy cursando el Grado Superior en Desarrollo de Aplicaciones Multiplataforma (DAM). ",
     "firstSpan": "Mi pasión es el desarrollo web ",
     "firstPartEnd": "y estoy en camino para convertirme en un programador Full Stack.",
     "secondPart": "Me especializo en el desarrollo de aplicaciones web y actualmente ",
