@@ -1,6 +1,7 @@
 ---
 import '@/styles/globals.css'
 import TimeLine from "../components/TimeLine.astro";
+import PersonalProjectsTimeLine from "../components/PersonalProjectsTimeLine.astro";
 import Titles from "../components/Titles.astro";
 import Articles from "../components/Articles.astro";
 import ProjectsCards from "../components/ProjectsCards.astro";
@@ -10,6 +11,7 @@ import TechInfo from "../components/TechInfo.astro";
 import TechIcon from "../components/TechIcon.astro";
 import AboutMeIcon from "../components/AboutMeIcon.astro";
 import ExperienceIcon from "../components/ExperienceIcon.astro";
+import PersonalProjectsIcon from "../components/PersonalProjectsIcon.astro";
 import NavBar from "../components/NavBar.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
@@ -20,8 +22,8 @@ const lang = 'en';
 
 const translations = loadTranslations(lang);
 
-type IconComponentKeys = 'ProjectsIcon' | 'TechIcon' | 'AboutMeIcon' | 'ExperienceIcon';
-type ContentComponentKeys = 'ProjectsCards' | 'TechInfo' | 'AboutMe' | 'TimeLine';
+type IconComponentKeys = 'ProjectsIcon' | 'TechIcon' | 'AboutMeIcon' | 'ExperienceIcon' | 'PersonalProjectsIcon';
+type ContentComponentKeys = 'ProjectsCards' | 'TechInfo' | 'AboutMe' | 'TimeLine' | 'PersonalProjectsTimeLine';
 
 const information = [
     {
@@ -47,20 +49,28 @@ const information = [
         icon: 'ExperienceIcon' as IconComponentKeys,
         title: translations.experience['title'],
         content: 'TimeLine' as ContentComponentKeys
+    },
+    {
+        id: 'personal-projects',
+        icon: 'PersonalProjectsIcon' as IconComponentKeys,
+        title: translations.personalProjects['personalProjectsTitle'],
+        content: 'PersonalProjectsTimeLine' as ContentComponentKeys
     }
 ];
 const iconComponents: Record<IconComponentKeys, any> = {
     ProjectsIcon: ProjectsIcon,
     TechIcon: TechIcon,
     AboutMeIcon: AboutMeIcon,
-    ExperienceIcon: ExperienceIcon
+    ExperienceIcon: ExperienceIcon,
+    PersonalProjectsIcon: PersonalProjectsIcon
 };
 
 const contentComponents: Record<ContentComponentKeys, any> = {
     ProjectsCards: ProjectsCards,
     TechInfo: TechInfo,
     AboutMe: AboutMe,
-    TimeLine: TimeLine
+    TimeLine: TimeLine,
+    PersonalProjectsTimeLine: PersonalProjectsTimeLine
 };
 ---
 
