@@ -54,15 +54,15 @@
       }
     },
     "geniusx": {
-      "date": "October 2024 - April 2025",
-      "description": "During my DAM internship, I've worked directly on developing and enhancing the digital experience for clients, facing technical and creative challenges that have strengthened my ability to identify solutions and optimize processes:",
+      "date": "November 2024 - April 2025",
+      "description": "During my DAM internship, I worked directly on developing and enhancing the digital experience for clients, facing technical and creative challenges that enhanced my ability to identify solutions and optimize processes:",
       "functions": {
-        "improveSEO": "Web development and continuous improvement: Took the initiative to optimize SEO for the websites I manage, ensuring that the sites perform well on search engines and are accessible to more users.",
-        "customFunctionalities": "Implemented custom functionalities on Wordpress sites, adapting to each client's specific needs and using tools like HTML5, CSS, and JS to bring their ideas to life.",
-        "problemSolving": "Problem-solving skills in a quick and efficient manner, providing effective solutions to maintain the stability and functionality of the websites.",
-        "teamWork": "Teamwork in collaboration with designers and developers, ensuring that each part of the project aligns and is executed efficiently, contributing to the final product's quality.",
-        "adaptability": "Adaptability to different projects and styles, as seen in the implementation of an innovative design for a vehicle workshop, where I took an initial concept and transformed it into a functional website with a sleek dark design.",
-        "n8n": "Automation with N8N: I implemented automated workflows for the company using N8N. Among the workflows I created is one for filtering invoices and another for managing automatic email responses, as well as filtering these emails. This optimizes internal processes and improves operational efficiency."
+        "improveSEO": "Web development and continuous improvement: I took the initiative to optimize the SEO of the pages I managed, ensuring the sites achieved outstanding search engine performance and were accessible to more users.",
+        "customFunctionalities": "Implementation of custom functionalities in WordPress sites: I adapted to each client's specific needs and used tools like HTML5, CSS and JS to bring their ideas to life.",
+        "problemSolving": "Rapid technical problem resolution: I provided effective solutions to maintain website stability and functionality.",
+        "teamWork": "Team collaboration with designers and developers: I coordinated each project phase to ensure aligned and efficient execution, contributing to the final product's quality.",
+        "adaptability": "Adaptability to different projects and styles: I implemented an innovative design for a vehicle workshop, transforming a basic concept into a functional website with a sleek dark theme.",
+        "n8n": "Automation with N8N: I implemented automated workflows using N8N, creating processes to filter invoices and manage automatic email responses and filtering, which optimized internal processes and improved operational efficiency."
       }
     },
     "informaticaLlagostera": {
@@ -74,6 +74,45 @@
         "solveProblems": "Problem-solving skills in fixing technical issues, such as repairing equipment and managing local networks, improving the infrastructure and reducing downtime.",
         "teamWork": "Collaborated effectively with the team, leading to continuous improvements in services and client satisfaction."
       }
+    }
+  },
+  "personalProjects": {
+    "personalProjectsTitle": "Personal Projects",
+    "description": "Over the past few years, I have led and collaborated on the creation and management of GTA V Roleplay servers on FiveM and Minecraft servers, applying programming skills, team coordination, and community support. Some of the most notable projects include:",
+    "projects": {
+      "quanticDreams": {
+        "date": "January 2020 - April 2020",
+        "description": "I also participated as staff and collaborator in the development of Quantic Dreams, a Minecraft server. This server had a survival mode and a plot area with respective commands and features, in addition to a Skywars mode. My role included designing and implementing various features within the server, as well as moderating and providing support to the community. The project, which started in January 2020, closed in April of the same year due to lack of time and resources. However, the experience allowed me to improve in server development and community management."
+      },
+      "emeraldCityRP": {
+        "date": "April 2020 - July 2020",
+        "description": "I was part of the staff team of Emerald City RP, a GTA V Roleplay server, from its inception. Despite being only 16 years old at the time, I took on various responsibilities within the server. I was in charge of creating posters, drafting regulations, and, most importantly, performing staff duties by handling player reports and managing tickets on Discord. My work was crucial in keeping the community organized and ensuring the rules were followed, which allowed me to develop skills in conflict management and customer service. The server closed by decision of the founder, a known contact of mine, but during its active time, I made significant contributions to its operation."
+      },
+      "renacidosRP": {
+        "date": "March 2021 - August 2021",
+        "description": "As founder and lead programmer, I was responsible for the creation and customization of scripts, maps, and systems for the server. My role not only included technical aspects but also team and community management. I supervised the implementation of internal regulations, management of roles and factions, and resolved technical issues reported by players. Throughout this process, I learned to make critical decisions regarding sanctions and conflict resolution between users, ensuring a fair and enjoyable experience for all players.",
+        "functions": {
+          "coordinateTeam": "Coordinating a diverse team and managing their daily tasks was essential to ensure the server ran smoothly. I learned to delegate responsibilities, prioritize tasks, and ensure that the team met their objectives on time.",
+          "usersCommunication": "Throughout this project, I managed communication with users who needed technical help or reported problems, which allowed me to practice active listening and respond clearly and effectively to their concerns.",
+          "managementAndProgramming": "I managed and programmed complex features that allowed the server to achieve an average of 40 concurrent players.",
+          "supervision": "I supervised the creation of original content and the translation of scripts to align them with the server's vision.",
+          "decisions": "I made critical decisions related to sanctions and conflict resolution between users.",
+          "documentation": "I implemented detailed documentation, including server rules, behavior guidelines, and internal operation manuals."
+        }
+      },
+      "projectW": {
+        "date": "August 2024 - November 2024",
+        "description": "In this server, I took on the role of lead programmer and staff manager, where I was responsible for updating and maintaining the server, adding new features, and resolving incidents. During the management of this project, my team and I faced challenges such as protection against DoS attacks, for which we had to research and apply security measures to ensure the stability of the server. Although time constraints due to studies and other commitments affected us, I managed to keep the server running while coordinating my team's tasks and ensuring all operational aspects were met.",
+        "functions": {
+          "timeManagement": "Time management was key, as I balanced my studies, server work, and team responsibilities. Although the project did not reach the expected success level, it allowed me to put into practice task prioritization and decision-making under pressure.",
+          "problemSolving": "When it came to problem-solving, I faced and resolved multiple technical issues arising from both programming and server protection. I learned to diagnose and act quickly to resolve issues and prevent them from affecting the user experience.",
+          "updates": "Frequent updates and additions to the server, improving user experience.",
+          "managementStaffTeam": "Managed a staff team, organizing functions and tasks to ensure the smooth running of the server.",
+          "website": "Designed and maintained the server's website using Astro, where the server's rules and guidelines were detailed, demonstrating my ability to combine programming with web content creation.",
+          "clientAttention": "Supervised customer support, resolving technical issues and organizing the sanction system."
+        }
+      },
+      "learnings": "Throughout these projects, customer service was a priority. I was in constant contact with users, managing bug reports, role issues, or incidents within the server. This allowed me to perfect my ability to explain complex problems simply, ensuring that users understood the solutions and felt heard and supported. This constant interaction also gave me a deep understanding of the importance of clear and effective communication, both within the team and with the player community."
     }
   },
   "copyright": "Some rights reserved. Inspired by the portfolio of",

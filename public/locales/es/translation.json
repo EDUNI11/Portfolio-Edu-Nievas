@@ -55,14 +55,14 @@
     },
     "geniusx": {
       "date": "Noviembre 2024 - Abril 2025",
-      "description": "Realizando las prácticas de DAM, estoy trabajado directamente en el desarrollo y la mejora de la experiencia digital de los clientes, enfrentándome a desafíos técnicos y creativos que han potenciado mis habilidades para identificar soluciones y optimizar procesos:",
+      "description": "Durante mis prácticas de DAM, trabajé directamente en el desarrollo y la mejora de la experiencia digital de los clientes, afrontando desafíos técnicos y creativos que potenciaron mis habilidades para identificar soluciones y optimizar procesos:",
       "functions": {
-        "improveSEO": "Desarrollo web y mejora continua: He tomado la iniciativa de optimizar el SEO de las páginas que gestiono, asegurando que los sitios tengan un rendimiento destacado en los motores de búsqueda y sean accesibles para más usuarios.",
-        "customFunctionalities": "Implementación de funcionalidades personalizadas en sitios web con Wordpress, adaptándome a las necesidades específicas de cada cliente y utilizando herramientas como HTML5, CSS y JS para dar vida a sus ideas.",
-        "problemSolving": "Resolución de problemas técnicos con rapidez, ofreciendo soluciones efectivas para mantener la estabilidad y la funcionalidad de las webs.",
-        "teamWork": "Trabajo en equipo en colaboración con diseñadores y desarrolladores, asegurando que cada parte del proyecto se realice de manera alineada y eficiente, lo que contribuye a la calidad final del producto.",
-        "adaptability": "Adaptabilidad a diferentes proyectos y estilos, como se ve en la implementación de un diseño innovador para un taller de vehículos, donde tomé una idea base y la transformé en una web funcional con un diseño oscuro y profesional.",
-        "n8n": "Automatización con N8N: Implementé flujos automatizados para la empresa utilizando N8N. Entre los flujos que creé se encuentra uno para filtrar facturas y otro para gestionar respuestas automáticas a correos electrónicos, así como la filtración de estos correos. Esto optimiza los procesos internos y mejora la eficiencia operativa."
+        "improveSEO": "Desarrollo web y mejora continua: tomé la iniciativa de optimizar el SEO de las páginas que gestioné, asegurando que los sitios obtuvieran un rendimiento destacado en los motores de búsqueda y fueran accesibles para más usuarios.",
+        "customFunctionalities": "Implementación de funcionalidades personalizadas en sitios web con WordPress: me adapté a las necesidades específicas de cada cliente y utilicé herramientas como HTML5, CSS y JS para dar vida a sus ideas.",
+        "problemSolving": "Resolución de problemas técnicos con rapidez: ofrecí soluciones efectivas para mantener la estabilidad y funcionalidad de las webs.",
+        "teamWork": "Trabajo en equipo en colaboración con diseñadores y desarrolladores: coordiné cada fase del proyecto para asegurar una ejecución alineada y eficiente, contribuyendo a la calidad final del producto.",
+        "adaptability": "Adaptabilidad a diferentes proyectos y estilos: implementé un diseño innovador para un taller de vehículos, partiendo de una idea base y transformándola en una web funcional con un estilo oscuro y profesional.",
+        "n8n": "Automatización con N8N: implementé flujos automatizados para la empresa utilizando N8N. Creé procesos para filtrar facturas y gestionar respuestas automáticas y filtraje de correos, optimizando los procesos internos y mejorando la eficiencia operativa."
       }
     },
     "informaticaLlagostera": {
@@ -75,6 +75,45 @@
         "teamWork": "Colaboración eficaz con el equipo de trabajo, lo que resultó en una mejora continua de los servicios y la satisfacción de los clientes."
       }
     }
+  },
+  "personalProjects": {
+    "personalProjectsTitle": "Proyectos personales",
+    "description": "En los últimos años he liderado y colaborado en la creación y gestión de servidores de GTA V Roleplay en FiveM y de Minecraft, poniendo en práctica la programación, la coordinación de equipos y la atención a la comunidad. Entre los proyectos más destacados se encuentran:",
+    "projects": {
+      "quanticDreams": {
+        "date": "Enero 2020 - Abril 2020",
+        "description": " También participé como staff y colaborador en el desarrollo de Quantic Dreams, un servidor de Minecraft. Este servidor contaba con un modo survival y una zona de parcelas con sus respectivos comandos y funciones, además de un modo Skywars. Mi rol incluyó el diseño y la implementación de varias funciones dentro del servidor, así como la moderación y atención a la comunidad. El proyecto, que se inició en enero de 2020, cerró en abril del mismo año debido a la falta de tiempo y recursos. Sin embargo, la experiencia me permitió mejorar en desarrollo de servidores y gestión de comunidades."
+      },
+      "emeraldCityRP": {
+        "date": "Abril 2020 - Julio 2020",
+        "description": "Formé parte del equipo de staff de Emerald City RP, un servidor de GTA V Roleplay, desde sus inicios. A pesar de tener solo 16 años en ese momento, asumí varias responsabilidades dentro del servidor. Estuve a cargo de la creación de carteles, redacción de normativas y, sobre todo, desempeñé funciones como staff al atender reportes de jugadores y gestionar tickets en Discord. Mi trabajo fue fundamental para mantener la comunidad organizada y asegurarme de que las reglas se cumplieran, lo que me permitió desarrollar habilidades en gestión de conflictos y atención al cliente. El servidor cerró por decisión del fundador, un conocido mío, pero durante su tiempo activo logré contribuir significativamente a su funcionamiento."
+      },
+      "renacidosRP": {
+        "date": "Marzo 2021 - Agosto 2021",
+        "description": "Como fundador y principal programador, fui responsable de la creación y personalización de scripts, mapeados y sistemas del servidor. Mi rol no solo abarcó la parte técnica, sino también la gestión del equipo y la comunidad. Supervisé la implementación de normativas internas, la gestión de roles y facciones, y me encargué de la resolución de problemas técnicos de los jugadores. Durante este proceso, aprendí a tomar decisiones críticas sobre sanciones y resoluciones de conflictos entre usuarios, asegurando que todos los jugadores tuvieran una experiencia justa y agradable.",
+        "functions": {
+          "coordinateTeam": "Coordinar a un equipo diverso y gestionar sus tareas diarias fue esencial para garantizar que el servidor funcionara correctamente. Aprendí a delegar responsabilidades, priorizar tareas y asegurarme de que el equipo cumpliera con sus objetivos a tiempo.",
+          "usersCommunication": "A lo largo de este proyecto, gestioné la comunicación con usuarios que requerían ayuda técnica o reportaban problemas, lo que me permitió practicar la escucha activa y responder de forma clara y eficaz a sus inquietudes.",
+          "managementAndProgramming": "Gestioné y programé funciones complejas que permitieron que el servidor alcanzara una media de 40 jugadores simultáneos.",
+          "supervision": "Supervisé la creación de contenido original y la traducción de scripts para adaptarlos a la visión del servidor.",
+          "decisions": "Tomé decisiones críticas relacionadas con sanciones y resolución de conflictos entre usuarios.",
+          "documentation": "Implementé documentación detallada, incluyendo normativas del servidor, reglas de comportamiento y guías de funcionamiento interno."
+        }
+      },
+      "projectW": {
+        "date": "Agosto 2024 - Noviembre 2024",
+        "description": "En este servidor, asumí el rol de programador principal y jefe de staff, donde me encargué de la actualización y mantenimiento del servidor, añadiendo nuevas funciones y solucionando incidencias. Durante la gestión de este proyecto, mi equipo y yo enfrentamos desafíos como la protección ante ataques DoS, para los cuales tuvimos que investigar y aplicar medidas de seguridad para garantizar la estabilidad del servidor. Aunque las limitaciones de tiempo debido a estudios y otros compromisos nos afectaron, logré mantener el funcionamiento del servidor, al mismo tiempo que coordinaba las tareas de mi equipo y aseguraba que todos los aspectos operativos se cumplieran.",
+        "functions": {
+          "timeManagement": "La gestión del tiempo fue clave, ya que equilibré mis estudios, trabajo en el servidor y responsabilidades del equipo. Aunque el proyecto no alcanzó el nivel de éxito esperado, me permitió poner en práctica la priorización de tareas y la toma de decisiones bajo presión.",
+          "problemSolving": "En cuanto a la resolución de problemas, enfrenté y solucioné múltiples incidencias técnicas que surgieron tanto en la programación como en la protección del servidor. Aprendí a diagnosticar y actuar de manera rápida para solucionar los problemas y evitar que afectaran la experiencia de los usuarios.",
+          "updates": "Implementación de actualizaciones frecuentes y adiciones al servidor, mejorando la experiencia del usuario.",
+          "managementStaffTeam": "Gestión de un equipo de staff, organizando funciones y tareas para asegurar el buen funcionamiento del servidor.",
+          "website": "Diseño y mantenimiento de la página web del servidor, utilizando Astro, donde se detallaban las normativas y reglas del servidor, demostrando mi habilidad para combinar la programación con la creación de contenido web.",
+          "clientAttention": "Supervisión de la atención al cliente, resolviendo problemas técnicos y organizando el sistema de sanciones."
+        }
+      }
+    },
+    "learnings": "A lo largo de estos proyectos, la atención al cliente fue una prioridad. Estuve en contacto constante con los usuarios, gestionando reportes de bugs, problemas en el rol o incidentes dentro del servidor. Esto me permitió perfeccionar mi habilidad para explicar problemas complejos de forma sencilla, asegurando que los usuarios comprendieran las soluciones y se sintieran escuchados y apoyados. Esta interacción constante también me dio una visión profunda sobre la importancia de la comunicación clara y efectiva, tanto dentro del equipo como con la comunidad de jugadores."
   },
   "copyright": "Algunos derechos reservados. Inspirado en el portfolio de",
   "english": "Inglés",
