@@ -1,5 +1,22 @@
 ---
+const logos = [
+  { src: "/img/logos/css.svg", alt: "CSS", title: "CSS3" },
+  { src: "/img/logos/html5.svg", alt: "HTML5", title: "HTML5" },
+  { src: "/img/logos/javascript.svg", alt: "JavaScript", title: "JavaScript" },
+  { src: "/img/logos/typescript.svg", alt: "TypeScript", title: "TypeScript" },
+  { src: "/img/logos/angular.svg", alt: "Angular2+", title: "Angular2+" },
+  { src: "/img/logos/react.svg", alt: "React", title: "React" },
+  { src: "/img/logos/astro.svg", alt: "Astro", title: "Astro" },
+  { src: "/img/logos/tailwindcss.svg", alt: "TailwindCSS", title: "TailwindCSS" },
+  { src: "/img/logos/bootstrap.svg", alt: "Bootstrap", title: "Bootstrap" },
+  { src: "/img/logos/nodejs.svg", alt: "Node.js", title: "Node.js" },
+  { src: "/img/logos/git.svg", alt: "Git", title: "Git" },
+  { src: "/img/logos/github.svg", alt: "GitHub", title: "GitHub" },
+  { src: "/img/logos/java.svg", alt: "Java", title: "Java" },
+  { src: "/img/logos/python.svg", alt: "Python", title: "Python" },
+];
 
+const duplicatedLogos = [...logos, ...logos];
 ---
 <style>
 
@@ -8,80 +25,76 @@
             transform: translateX(0);
         }
         to {
-            transform: translateX(-100%);
+            transform: translateX(-50%);
         }
     }
 
     .logos-slider img {
-        height: 2rem;
-        margin: 0 1em;
+        height: 2.5rem;
+        width: auto;
+        opacity: 0.75;
+        filter: grayscale(20%);
+        transition: all 0.3s ease-in-out;
+    }
+
+    .logos-slider img:hover {
+        opacity: 1;
+        filter: grayscale(0%);
+        transform: scale(1.2);
     }
 
     .logos-slider {
-        display: inline-flex;
-        animation: 20s slide infinite linear;
+        display: flex;
+        width: max-content;
+        animation: 40s slide infinite linear;
     }
 
     .logos {
         overflow: hidden;
-        padding: 3rem 0;
+        padding: 4rem 0;
         white-space: nowrap;
         position: relative;
+        width: 100%;
     }
 
-    .logos:hover .logos-slider {
+    .logos-slider:hover {
         animation-play-state: paused;
     }
 
     .logos:before {
         left: 0;
-        background: linear-gradient(to left, rgba(255, 255, 255, 0) 50%, var(--background) 100%);
+        background: linear-gradient(to right, var(--background) 0%, rgba(255, 255, 255, 0) 100%);
     }
 
     .logos:after {
         right: 0;
-        background: linear-gradient(to right, rgba(255, 255, 255, 0) 50%, var(--background) 100%);
+        background: linear-gradient(to left, var(--background) 0%, rgba(255, 255, 255, 0) 100%);
     }
 
     .logos:before, .logos:after {
         position: absolute;
         top: 0;
-        width: 20rem;
+        width: 15rem;
         height: 100%;
         content: "";
         z-index: 2;
+        pointer-events: none;
+    }
+
+    .logo-item {
+        flex-shrink: 0;
+        padding: 0 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 </style>
 <div class="logos">
     <div class="logos-slider">
-        <img src="/img/logos/css.svg" alt="CSS" title="CSS3"/>
-        <img src="/img/logos/html5.svg" alt="HTML5" title="HTML5"/>
-        <img src="/img/logos/javascript.svg" alt="JavaScript" title="JavaScript"/>
-        <img src="/img/logos/typescript.svg" alt="TypeScript" title="TypeScript"/>
-        <img src="/img/logos/angular.svg" alt="Angular2+" title="Angular2+"/>
-        <img src="/img/logos/react.svg" alt="React" title="React"/>
-        <img src="/img/logos/astro.svg" alt="Astro" title="Astro"/>
-        <img src="/img/logos/tailwindcss.svg" alt="TailwindCSS" title="TailwindCSS"/>
-        <img src="/img/logos/bootstrap.svg" alt="Bootstrap" title="Bootstrap"/>
-        <img src="/img/logos/nodejs.svg" alt="Node.js" title="Node.js"/>
-        <img src="/img/logos/git.svg" alt="Git" title="Git"/>
-        <img src="/img/logos/github.svg" alt="GitHub" title="GitHub"/>
-        <img src="/img/logos/java.svg" alt="Java" title="Java"/>
-        <img src="/img/logos/python.svg" alt="Python" title="Python"/>
-        <img src="/img/logos/css.svg" alt="CSS" title="CSS 3"/>
-        <img src="/img/logos/html5.svg" alt="HTML5" title="HTML 5"/>
-        <img src="/img/logos/javascript.svg" alt="JavaScript" title="JavaScript"/>
-        <img src="/img/logos/typescript.svg" alt="TypeScript" title="TypeScript"/>
-        <img src="/img/logos/angular.svg" alt="Angular2+" title="Angular2+"/>
-        <img src="/img/logos/react.svg" alt="React" title="React"/>
-        <img src="/img/logos/astro.svg" alt="Astro" title="Astro"/>
-        <img src="/img/logos/tailwindcss.svg" alt="TailwindCSS" title="TailwindCSS"/>
-        <img src="/img/logos/bootstrap.svg" alt="Bootstrap" title="Bootstrap"/>
-        <img src="/img/logos/nodejs.svg" alt="Node.js" title="Node.js"/>
-        <img src="/img/logos/git.svg" alt="Git" title="Git"/>
-        <img src="/img/logos/github.svg" alt="GitHub" title="GitHub"/>
-        <img src="/img/logos/java.svg" alt="Java" title="Java"/>
-        <img src="/img/logos/python.svg" alt="Python" title="Python"/>
+        {duplicatedLogos.map((logo) => (
+            <div class="logo-item">
+                <img src={logo.src} alt={logo.alt} title={logo.title} />
+            </div>
+        ))}
     </div>
-
 </div>
